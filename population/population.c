@@ -28,12 +28,17 @@ int get_startsize()
     do
     {
         start = get_int("starting population size: ");
-    }while (start<9);
+    }while (start < 9);
     return start;
 }
 
 int calculate_year(int start, int end)
 {
     int year = 0;
-
+    while (start < end)
+    {
+        start = start + start/3 - start/4;
+        year++;
+    }
+    return year;
 }
