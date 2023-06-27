@@ -39,7 +39,7 @@ void draw(int h)
         }
         for (int j = i+1; j < h; j++)
         {
-            printf(".");
+            printf(" ");
         }
         printf("\n");
     }
