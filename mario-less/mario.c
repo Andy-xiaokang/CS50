@@ -28,7 +28,7 @@ void draw(int h)
         {
             printf(" ");
         }
-        for (; j<h; j++)
+        for (int j = h-1-i; j<h; j++)
         {
             printf("#");
         }
