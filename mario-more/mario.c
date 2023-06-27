@@ -26,7 +26,7 @@ void draw(int h)
     {
         for (int j = 0; j < h-1-i; j++)
         {
-            printf(" ");
+            printf(".");
         }
         for (int j = h-1-i; j<h; j++)
         {
@@ -39,7 +39,7 @@ void draw(int h)
         }
         for (int j = i+1; j < h; j++)
         {
-            printf(" ");
+            printf(".");
         }
         printf("\n");
     }
