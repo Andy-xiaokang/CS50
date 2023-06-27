@@ -13,13 +13,15 @@ int main(void)
 
     // TODO: Print number of years
     int start_size = get_startsize();
-    
+    printf("%i",start_size);
 }
 
 int get_startsize()
 {
+    int start;
     do
     {
-        int start = get_int("starting population size: ");
-    }while (start<9)
+        start = get_int("starting population size: ");
+    }while (start<9);
+    return start;
 }
