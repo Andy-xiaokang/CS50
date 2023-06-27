@@ -19,7 +19,7 @@ int main(void)
     int year = calculate_year(start_size, end_size);
 
     // TODO: Print number of years
-    printf("Years: %i\n", year);
+    printf("Years: clear%i\n", year);
 }
 
 int get_startsize()
