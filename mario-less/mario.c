@@ -26,7 +26,7 @@ void draw(int h)
     {
         for(int j = 0; j < h;)
         {
-            
+            while (j < h-1-i)
         }
     }
 }
