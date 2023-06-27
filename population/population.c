@@ -16,10 +16,10 @@ int main(void)
         end_size = get_int("end population size: ");
     }while (end_size < start_size);
     // TODO: Calculate number of years until we reach threshold
-    int year = calculate_year(start_size,end_size);
+    int year = calculate_year(start_size, end_size);
 
     // TODO: Print number of years
-    printf("Years:%i\n",year);
+    printf("Years:%i\n", year);
 }
 
 int get_startsize()
@@ -34,5 +34,6 @@ int get_startsize()
 
 int calculate_year(int start, int end)
 {
-    
+    int year = 0;
+
 }
