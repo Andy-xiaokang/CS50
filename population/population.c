@@ -6,13 +6,17 @@ int get_startsize();
 int main(void)
 {
     // TODO: Prompt for start size
-
+    int start_size = get_startsize();
     // TODO: Prompt for end size
-
+    int end_size;
+    while (end_size < start_size)
+    {
+        
+    }
     // TODO: Calculate number of years until we reach threshold
 
     // TODO: Print number of years
-    int start_size = get_startsize();
+
     printf("%i",start_size);
 }
 
