@@ -24,9 +24,14 @@ void draw(int h)
 {
     for(int i = 0; i < h; i++)
     {
-        for(int j = 0; j < h-1-i;)
+        for (int j = 0; j < h-1-i; j++)
         {
-
+            printf(" ");
         }
+        for (; j<h; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 }
