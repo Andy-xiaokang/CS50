@@ -24,9 +24,9 @@ void draw(int h)
 {
     for(int i = 0; i < h; i++)
     {
-        for(int j = 0; j < h;)
+        for(int j = 0; j < h-1-i;)
         {
-            while (j < h-1-i)
+
         }
     }
 }
