@@ -89,14 +89,14 @@ void check_credit(long number)
     }
     if (length == 16 && (number/1e15 == 4))
     {
-        printf("VISA");
+        printf("VISA\n");
     }
     if (length == 13 && (number/1e12 == 4))
     {
-        printf("VISA");
+        printf("VISA\n");
     }
     else
     {
-        printf("INVALID");
+        printf("INVALID\n");
     }
 }
