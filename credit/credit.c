@@ -79,19 +79,19 @@ int checksum2(long number2)
 void check_credit(long number)
 {
     int length = get_length(number);
-    if (length == 15 && (number/e13 == 34 || number/e13 == 37))
+    if (length == 15 && (number/1e13 == 34 || number/1e13 == 37))
     {
         printf("AMEX\n");
     }
-    if (length == 16 && (number/e14 == 51 || number/e14 == 52 || number/e14 == 53 ||number/e14 == 54 ||number/e14 == 55))
+    if (length == 16 && (number/1e14 == 51 || number/1e14 == 52 || number/1e14 == 53 ||number/1e14 == 54 ||number/1e14 == 55))
     {
         printf("MASTERCARD\n");
     }
-    if (length == 16 && (number/e15 == 4))
+    if (length == 16 && (number/1e15 == 4))
     {
         printf("VISA");
     }
-    if (length == 13 && (number/e12 == 4))
+    if (length == 13 && (number/1e12 == 4))
     {
         printf("VISA");
     }
