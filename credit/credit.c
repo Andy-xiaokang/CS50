@@ -5,7 +5,7 @@ int checksum1(long number1);
 int checksum2(long number2);
 long get_number(void);
 int get_length(long number);
-void check_credit(long credit);
+void check_credit(long number);
 
 int main(void)
 {
