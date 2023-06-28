@@ -1,11 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int checksum1();
-int checksum2();
-long get_number();
-int get_length();
-void check_credit();
+int checksum1(long number1);
+int checksum2(long number2);
+long get_number(void);
+int get_length(long number);
+void check_credit(long credit);
 
 int main(void)
 {
