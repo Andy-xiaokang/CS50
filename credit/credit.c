@@ -83,5 +83,16 @@ void check_credit(long number)
     {
         printf("AMEX\n");
     }
-    if (length == 16 && (number/e14 ==51 || number/e14 ==52 || number/e14 ==53 ||number/e14 ==54 ||number/e14 ==55))
+    if (length == 16 && (number/e14 == 51 || number/e14 == 52 || number/e14 == 53 ||number/e14 == 54 ||number/e14 == 55))
+    {
+        printf("MASTERCARD\n");
+    }
+    if ()
+    {
+
+    }
+    else
+    {
+        printf("INVALID");
+    }
 }
