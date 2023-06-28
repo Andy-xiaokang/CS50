@@ -37,10 +37,10 @@ void draw(int h)
         {
             printf("#");
         }
-        for (int j = i+1; j < h; j++)
-        {
-            printf(" ");
-        }
+        // for (int j = i+1; j < h; j++)
+        // {
+        //     printf(" ");
+        // }
         printf("\n");
     }
 }
