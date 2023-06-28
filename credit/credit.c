@@ -44,7 +44,8 @@ int get_length(long number)
     do
     {
         number /= 10;
-    }
+        length++;
+    }while (number != 0)
 }
 
 int checksum1(long number1)
