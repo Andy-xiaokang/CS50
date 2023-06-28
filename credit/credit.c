@@ -79,5 +79,8 @@ int checksum2(long number2)
 void check_credit(long number)
 {
     int length = get_length(number);
-    if (length == 15 && ())
+    if (length == 15 && (number/e13 == 34 || number/e13 == 37))
+    {
+        printf("")
+    }
 }
