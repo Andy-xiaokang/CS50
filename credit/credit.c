@@ -15,7 +15,15 @@ int main(void)
 
 }
 
+
+
 int checksum1(long number1)
 {
-    
+
 }
+
+int checksum2(long number2)
+{
+
+}
+
