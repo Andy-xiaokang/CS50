@@ -27,7 +27,7 @@ int main(void)
 
 long get_number(void)
 {
-    int number;
+    long number;
     do
     {
         number = get_long("Number: ");
