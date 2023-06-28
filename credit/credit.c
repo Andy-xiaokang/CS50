@@ -71,12 +71,13 @@ int checksum2(long number2)
         number2 /= 100;
         if (2*(number % 10) > 9)
         {
-            checksum2 = checksum2 + ()
+            checksum2 = checksum2 + (2*(number % 10))/10 +(2*(number % 10))%10;
         }
     }while (number2 != 0);
+    return checksum2;
 }
 
 void check_credit(long number)
 {
-
+    
 }
