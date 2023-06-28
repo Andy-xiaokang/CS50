@@ -15,7 +15,10 @@ int main(void)
 
 }
 
-
+long get_number(void)
+{
+    
+}
 
 int checksum1(long number1)
 {
