@@ -40,7 +40,11 @@ long get_number(void)
 
 int get_length(long number)
 {
-
+    int length = 0;
+    do
+    {
+        number /= 10;
+    }
 }
 
 int checksum1(long number1)
