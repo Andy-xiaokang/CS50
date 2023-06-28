@@ -87,9 +87,13 @@ void check_credit(long number)
     {
         printf("MASTERCARD\n");
     }
-    if ()
+    if (length == 16 && (number/e15 == 4))
     {
-
+        printf("VISA");
+    }
+    if (length == 13 && (number/e12 == 4))
+    {
+        printf("VISA");
     }
     else
     {
