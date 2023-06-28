@@ -53,13 +53,15 @@ int checksum1(long number1)
     int checksum1 = number1 % 10;
     do
     {
-        
-    }
+        number1 /= 100;
+        checksum1 = checksum1 + number1 % 10;
+    }while (number1 !=0 );
+    return checksum1;
 }
 
 int checksum2(long number2)
 {
-
+    
 }
 
 void check_credit(long number)
