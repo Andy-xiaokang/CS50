@@ -64,7 +64,7 @@ int checksum2(long number2)
     int checksum2 = 2*(number2 % 10);
     if (checksum2 > 10)
     {
-        
+        checksum2 = 
     }
 }
 
