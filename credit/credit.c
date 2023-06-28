@@ -50,6 +50,7 @@ int get_length(long number)
 
 int checksum1(long number1)
 {
+    int checksum1 = 0;
     
 }
 
