@@ -15,7 +15,6 @@ int main(void)
     int checksum1 = checksum1(number1);
     int ckecksum2 = checksum2(number2);
     int checksum = checksum1 + checksum2();
-    // int length = get_length(number);
     if (checksum % 10 == 0)
     {
         check_credit(number);
@@ -79,5 +78,6 @@ int checksum2(long number2)
 
 void check_credit(long number)
 {
+    int length = get_length(number);
     
 }
