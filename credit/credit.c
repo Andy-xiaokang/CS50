@@ -84,6 +84,7 @@ int checksum2(long number2)
 void check_credit(long number)
 {
     int length = get_length(number);
+    printf("length: %d\n", length);
     if (length == 15 && (number/1e13 == 34 || number/1e13 == 37))
     {
         printf("AMEX\n");
