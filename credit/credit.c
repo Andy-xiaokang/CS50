@@ -93,7 +93,7 @@ void check_credit(long number)
     {
         printf("MASTERCARD\n");
     }
-    if (length == 16 && (number/1e15 == 4))
+    if (length == 16 && number/1e15 == 4)
     {
         printf("VISA\n");
     }
