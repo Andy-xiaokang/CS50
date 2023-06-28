@@ -15,3 +15,7 @@ int main(void)
 
 }
 
+int checksum1(long number1)
+{
+    
+}
