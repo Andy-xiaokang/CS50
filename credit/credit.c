@@ -14,7 +14,7 @@ int main(void)
     long number2 = number/10;
     int checksum1 = checksum1(number1);
     int ckecksum2 = checksum2(number2);
-    int checksum = checksum1 + checksum2();
+    int checksum = checksum1 + checksum2;
     if (checksum % 10 == 0)
     {
         check_credit(number);
