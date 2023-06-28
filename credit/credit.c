@@ -12,9 +12,9 @@ int main(void)
     long number = get_number();
     long number1 = number;
     long number2 = number/10;
-    int checksum1 = checksum1(number1);
-    int ckecksum2 = checksum2(number2);
-    int checksum = checksum1 + checksum2;
+    int checksum_1 = checksum1(number1);
+    int checksum_2 = checksum2(number2);
+    int checksum = checksum_1 + checksum_2;
     if (checksum % 10 == 0)
     {
         check_credit(number);
