@@ -51,7 +51,10 @@ int get_length(long number)
 int checksum1(long number1)
 {
     int checksum1 = number1 % 10;
-    
+    do
+    {
+        
+    }
 }
 
 int checksum2(long number2)
