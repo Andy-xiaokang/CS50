@@ -50,7 +50,7 @@ int get_length(long number)
 
 int checksum1(long number1)
 {
-
+    
 }
 
 int checksum2(long number2)
