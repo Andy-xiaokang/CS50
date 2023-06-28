@@ -23,7 +23,7 @@ int main(void)
     {
         printf("INVALID\n");
     }
-    printf("number1:%ld, number2:%ld, checksum_1:%d, checksum_2:%d\n",number1, number2, checksum_1, checksum_2);
+    printf("number1:%ld, number2:%ld, checksum_1:%d, checksum_2:%d, ckecksum:%d\n",number1, number2, checksum_1, checksum_2, checksum);
 }
 
 long get_number(void)
