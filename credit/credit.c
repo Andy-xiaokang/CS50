@@ -73,6 +73,10 @@ int checksum2(long number2)
         {
             checksum2 = checksum2 + (2*(number2 % 10))/10 +(2*(number2 % 10))%10;
         }
+        else
+        {
+            checksum2 = checksum2 + 
+        }
     }while (number2 != 0);
     return checksum2;
 }
