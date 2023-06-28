@@ -13,6 +13,8 @@ int main(void)
     int checksum1 = checksum1(number1);
     int ckecksum2 = checksum2(number2);
     int checksum = checksum1 + checksum2();
+    int length = get_length(number);
+    
 
 
 }
@@ -24,7 +26,7 @@ long get_number(void)
 
 int get_length(long number)
 {
-    
+
 }
 
 int checksum1(long number1)
