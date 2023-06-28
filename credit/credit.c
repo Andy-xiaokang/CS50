@@ -4,6 +4,7 @@
 int checksum1();
 int checksum2();
 long get_number();
+int get_length();
 int main(void)
 {
     long number = get_number();
@@ -13,9 +14,15 @@ int main(void)
     int ckecksum2 = checksum2(number2);
     int checksum = checksum1 + checksum2();
 
+
 }
 
 long get_number(void)
+{
+
+}
+
+int get_length(long number)
 {
     
 }
