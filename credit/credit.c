@@ -1,7 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void) 
+int checksum1();
+int checksum2();
+int get
+int main(void)
 {
-    
+
 }
