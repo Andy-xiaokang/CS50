@@ -34,8 +34,8 @@ long get_number(void)
     int number;
     do
     {
-        
-    }
+        number = get_long("Number: ");
+    }while (number < 0);
 }
 
 int get_length(long number)
