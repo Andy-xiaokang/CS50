@@ -31,7 +31,11 @@ int main(void)
 
 long get_number(void)
 {
-
+    int number;
+    do
+    {
+        
+    }
 }
 
 int get_length(long number)
