@@ -66,6 +66,10 @@ int checksum2(long number2)
     {
         checksum2 = checksum2/10 + checksum2%10;
     }
+    do
+    {
+        
+    }while (number2 != 0);
 }
 
 void check_credit(long number)
