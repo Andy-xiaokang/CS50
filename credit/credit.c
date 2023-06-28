@@ -23,9 +23,6 @@ int main(void)
     {
         printf("INVALID");
     }
-
-
-
 }
 
 long get_number(void)
@@ -35,6 +32,7 @@ long get_number(void)
     {
         number = get_long("Number: ");
     }while (number < 0);
+    return number;
 }
 
 int get_length(long number)
@@ -44,7 +42,9 @@ int get_length(long number)
     {
         number /= 10;
         length++;
-    }while (number != 0)
+    }while (number != 0);
+    return length;
+
 }
 
 int checksum1(long number1)
@@ -79,5 +79,5 @@ int checksum2(long number2)
 void check_credit(long number)
 {
     int length = get_length(number);
-    
+    if (length == 15 && ())
 }
