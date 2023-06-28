@@ -69,8 +69,7 @@ int checksum2(long number2)
     do
     {
         number2 /= 100;
-        
-        if ( > 9)
+        if (2*(number % 10) > 9)
         {
             checksum2 = checksum2 + ()
         }
