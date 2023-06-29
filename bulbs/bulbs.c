@@ -23,9 +23,9 @@ int main(void)
             message[i] = quotient;
             bits[j] = remainders;
         }
-        for (int l = 0; l < 8; l++)
+        for (int j = 0; j < 8; j++)
         {
-            print_bulb(bits[i]);
+            print_bulb(bits[j]);
         }
         printf("\n");
     }
