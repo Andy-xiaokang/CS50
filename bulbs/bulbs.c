@@ -11,7 +11,7 @@ int main(void)
     // TODO
     string message = get_string("Message: ");
     int length = strlen(message);
-    int bits[BITS_IN_BYTE] = {0,0,0,0,0,0,0,0};
+    int bits[8] = {0,0,0,0,0,0,0,0};
     for (int i = 0; i < length; i++)
     {
         int j = 7;
