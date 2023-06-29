@@ -15,5 +15,6 @@ int main(void)
     int sentences = count_sentences(text);
     float L = letters/(float)words * 100;
     float S = sentences/(float)words *100;
-    int index = (int)round()
+    int index = (int)round(0.0588 * L - 0.296 * S - 15.8);
+    
 }
