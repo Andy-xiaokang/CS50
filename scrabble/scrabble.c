@@ -42,7 +42,8 @@ int compute_score(string word)
     {
         if (islower(word[i]))
         {
-            word[i] = tou
+            word[i] = toupper(word[i]);
+            score = score + POINTS[word[i]-65];
         }
     }
 }
