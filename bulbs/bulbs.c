@@ -23,6 +23,10 @@ int main(void)
             message[i] = quotient;
             bits[j] = remainders;
         }
+        for (int i = 0; i < 8; i++)
+        {
+            
+        }
     }
 }
 
