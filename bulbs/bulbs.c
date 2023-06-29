@@ -12,10 +12,13 @@ int main(void)
     string message = get_string("Message: ");
     int length = strlen(message);
     int remainders;
-    int 
+    int quotient;
     for (int i = 0; i < length; i++)
     {
-
+        do
+        {
+            remainders = 
+        }while (quotient != 0);
     }
 }
 
