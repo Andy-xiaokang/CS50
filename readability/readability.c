@@ -13,5 +13,7 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    
+    float L = letters/(float)words * 100;
+    float S = sentences/(float)words *100;
+    int index = (int)round()
 }
