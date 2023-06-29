@@ -13,7 +13,8 @@ int main(void)
     int length = strlen(message);
     for (int i = 0; i < length; i++)
     {
-        
+        int remainders;
+        int 
     }
 }
 
