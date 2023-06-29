@@ -40,6 +40,9 @@ int compute_score(string word)
     int length = strlen(word);
     for (int i = 0; i < length; i++)
     {
-        if (islower())
+        if (islower(word[i]))
+        {
+            
+        }
     }
 }
