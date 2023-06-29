@@ -13,7 +13,7 @@ int main(void)
     int length = strlen(message);
     int remainders;
     int quotient;
-    int bits[BITS_IN_BYTE];
+    int bits[BITS_IN_BYTE] = {0,0,0,0,0,0,0,0};
     for (int i = 0; i < length; i++)
     {
         do
