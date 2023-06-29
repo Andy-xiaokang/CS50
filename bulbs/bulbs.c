@@ -17,7 +17,8 @@ int main(void)
     {
         do
         {
-            remainders = 
+            remainders = message[i] % 2;
+            quotient = message[i] / 2;
         }while (quotient != 0);
     }
 }
