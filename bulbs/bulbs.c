@@ -15,13 +15,19 @@ int main(void)
     for (int i = 0; i < length; i++)
     {
         int remainders;
-        int quotient = message[i];
-        for (int j = 7; quotient != 0; j--)
+        int quotient;
+        // for (int j = 7; quotient != 0; j--)
+        // {
+        //     remainders = message[i] % 2;
+        //     quotient = message[i] / 2;
+        //     message[i] = quotient;
+        //     bits[j] = remainders;
+        // }
+        do
         {
             remainders = message[i] % 2;
             quotient = message[i] / 2;
-            message[i] = quotient;
-            bits[j] = remainders;
+            
         }
         for (int j = 0; j < 8; j++)
         {
