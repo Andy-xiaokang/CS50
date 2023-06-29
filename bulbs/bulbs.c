@@ -11,19 +11,12 @@ int main(void)
     // TODO
     string message = get_string("Message: ");
     int length = strlen(message);
-    int bits[8] = {0,0,0,0,0,0,0,0};
     for (int i = 0; i < length; i++)
     {
         int j = 7;
         int remainders;
         int quotient;
-        // for (int j = 7; quotient != 0; j--)
-        // {
-        //     remainders = message[i] % 2;
-        //     quotient = message[i] / 2;
-        //     message[i] = quotient;
-        //     bits[j] = remainders;
-        // }
+        int bits[8] = {0,0,0,0,0,0,0,0};
         do
         {
             remainders = message[i] % 2;
