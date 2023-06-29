@@ -14,8 +14,8 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    float L = letters/(float)words * 100;
-    float S = sentences/(float)words *100;
+    float L = (letters/(float)words) * 100;
+    float S = (sentences/(float)words) *100;
     int index = (int)round(0.0588 * L - 0.296 * S - 15.8);
     if (index >= 16)
     {
@@ -59,5 +59,14 @@ int count_words(string text)
 }
 int count_sentences(string text)
 {
-    
+    int sentences = 0;
+    int length = strlen(text);
+    for (int i = 0; i < length; i++)
+    {
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
+        {
+            sentences++;
+        }
+    }
+    return sentences;
 }
