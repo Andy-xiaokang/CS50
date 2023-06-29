@@ -15,7 +15,7 @@ int main(void)
     for (int i = 0; i < length; i++)
     {
         int remainders;
-        int quotient;
+        int quotient = message[i];
         for (int j = 7; quotient != 0; j--)
         {
             remainders = message[i] % 2;
