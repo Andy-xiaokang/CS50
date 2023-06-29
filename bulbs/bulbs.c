@@ -12,7 +12,7 @@ int main(void)
     string message = get_string("Message: ");
     int length = strlen(message);
     int bits[BITS_IN_BYTE] = {0,0,0,0,0,0,0,0};
-    for (int i = 0; i < length; i++)
+    for (int i = 0, j = 7; i < length; i++)
     {
         int remainders;
         int quotient;
@@ -27,11 +27,13 @@ int main(void)
         {
             remainders = message[i] % 2;
             quotient = message[i] / 2;
-            
-        }
-        for (int j = 0; j < 8; j++)
+            message[i] = quotient;
+            bits[j] = remainders;
+            j--;
+        }while (quotient != 0);
+        for (int l = 0; l < 8; l++)
         {
-            print_bulb(bits[j]);
+            print_bulb(bits[l]);
         }
         printf("\n");
     }
