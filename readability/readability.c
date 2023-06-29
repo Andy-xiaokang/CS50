@@ -33,11 +33,20 @@ int main(void)
 
 int count_letters(string text)
 {
-    
+    int letters = 0;
+    int length = strlen(text);
+    for (int i = 0; i < length; i++)
+    {
+        if (isalpha(text[i]))
+        {
+            letters++;
+        }
+    }
+    return letters;
 }
 int count_words(string text)
 {
-
+    
 }
 int count_sentences(string text)
 {
