@@ -9,7 +9,12 @@ void print_bulb(int bit);
 int main(void)
 {
     // TODO
-    
+    string message = get_string("Message: ");
+    int length = strlen(message);
+    for (int i = 0; i < length; i++)
+    {
+        
+    }
 }
 
 void print_bulb(int bit)
