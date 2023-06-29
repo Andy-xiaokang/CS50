@@ -20,7 +20,7 @@ int main(void)
         {
             remainders = message[i] % 2;
             quotient = message[i] / 2;
-            bits[7-i] = 
+            bits[7] = remainders;
         }while (quotient != 0);
     }
 }
