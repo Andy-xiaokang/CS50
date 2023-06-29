@@ -23,7 +23,7 @@ int main(void)
     {
         printf("INVALID\n");
     }
-    printf("number1:%ld, number2:%ld, checksum_1:%d, checksum_2:%d, ckecksum:%d\n",number1, number2, checksum_1, checksum_2, checksum);
+    // printf("number1:%ld, number2:%ld, checksum_1:%d, checksum_2:%d, ckecksum:%d\n",number1, number2, checksum_1, checksum_2, checksum);
 }
 
 long get_number(void)
@@ -84,20 +84,20 @@ int checksum2(long number2)
 void check_credit(long number)
 {
     int length = get_length(number);
-    printf("length: %d\n", length);
-    if (length == 15 && (number/1e13 == 34 || number/1e13 == 37))
+    // printf("length: %d\n", length);
+    if (length == 15 && ((int)(number/1e13) == 34 || (int)(number/1e13) == 37))
     {
         printf("AMEX\n");
     }
-    if (length == 16 && (number/1e14 == 51 || number/1e14 == 52 || number/1e14 == 53 ||number/1e14 == 54 ||number/1e14 == 55))
+    else if (length == 16 && ((int)(number/1e14) == 51 || (int)(number/1e14) == 52 || (int)(number/1e14) == 53 ||(int)(number/1e14) == 54 || (int)(number/1e14) == 55))
     {
         printf("MASTERCARD\n");
     }
-    if (length == 16 && number/1e15 == 4)
+    else if (length == 16 && ((int)(number/1e15) == 4))
     {
         printf("VISA\n");
     }
-    if (length == 13 && (number/1e12 == 4))
+    else if (length == 13 && ((int)(number/1e12) == 4))
     {
         printf("VISA\n");
     }
