@@ -12,8 +12,9 @@ int main(void)
     string message = get_string("Message: ");
     int length = strlen(message);
     int bits[BITS_IN_BYTE] = {0,0,0,0,0,0,0,0};
-    for (int i = 0 j = 7; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
+        int j = 7;
         int remainders;
         int quotient;
         // for (int j = 7; quotient != 0; j--)
