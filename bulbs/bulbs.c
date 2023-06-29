@@ -14,11 +14,12 @@ int main(void)
     int bits[BITS_IN_BYTE] = {0,0,0,0,0,0,0,0};
     for (int i = 0; i < length; i++)
     {
-        int remainders;
-        int quotient;
         for (int j = 7; quotient != 0; j--)
         {
-            remainders
+            int remainders = message[i] % 2;
+            int quotient = message[i] / 2;
+            message[i] = quotient;
+            bits[j] = 
         }
     }
 }
