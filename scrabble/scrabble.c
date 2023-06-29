@@ -45,5 +45,9 @@ int compute_score(string word)
             word[i] = toupper(word[i]);
             score = score + POINTS[word[i]-65];
         }
+        else if (isupper(word[i]))
+        {
+            score = score + POINTS[word[i]-65];
+        }
     }
 }
