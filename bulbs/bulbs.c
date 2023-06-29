@@ -11,10 +11,11 @@ int main(void)
     // TODO
     string message = get_string("Message: ");
     int length = strlen(message);
+    int remainders;
+    int 
     for (int i = 0; i < length; i++)
     {
-        int remainders;
-        int 
+
     }
 }
 
