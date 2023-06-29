@@ -42,7 +42,7 @@ int compute_score(string word)
     {
         if (islower(word[i]))
         {
-            
+            word[i] = tou
         }
     }
 }
