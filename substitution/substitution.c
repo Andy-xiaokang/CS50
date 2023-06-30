@@ -57,7 +57,7 @@ string get_key(string text)
 
 void print_ciphertext(string key, string plaintext)
 {
-    string ciphertext;
+    string ciphertext = plaintext;
     for (int i = 0; i < strlen(plaintext); i++)
     {
         if (islower(plaintext[i]))
