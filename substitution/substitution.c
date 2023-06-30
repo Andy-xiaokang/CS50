@@ -4,6 +4,7 @@
 #include <ctype.h>
 
 string get_key(string array)
+
 int main(int argc, string argv[])
 {
     int length =strlen(argv);
@@ -38,5 +39,5 @@ int main(int argc, string argv[])
     }
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv);
-    
+
 }
