@@ -12,3 +12,13 @@ How do you know?: TODO
 
 
 *****************************************
+                  sort1  | sort2  | sort3 |
+random5000     |         |
+ramdom10000    |         |
+random50000    |         |
+reversed5000   |         |
+reversed10000  |         |
+reversed50000  |         |
+sorted5000     |
+sorted10000    |
+sorted50000    |
