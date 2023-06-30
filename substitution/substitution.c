@@ -13,10 +13,15 @@ int main(int argc, string argv[])
     if (strlen(argv) != 26)
     {
         printf("Key must contain 26 characters.");
-        return 1
+        return 1;
     }
     for (int i = 0; i < strlen(argv); i++)
     {
-        if (!(is))
+        if (!(isalpha(argv[i])))
+        {
+            printf("key must be character.")
+        }
+        return 1;
     }
+    
 }
