@@ -16,9 +16,9 @@ How do you know?: TODO
 random5000     |  0.076    0.043    0.062
 ramdom10000    |  0.32     0.11     0.229
 random50000    |  8.939    2.086    6.25
-reversed5000   |  
-reversed10000  |
-reversed50000  |
-sorted5000     |
-sorted10000    |
-sorted50000    |
+reversed5000   |  0.071    0.047    0.043
+reversed10000  |  0.237    0.072    0.188
+reversed50000  |  0.6328   0.1338   4.622
+sorted5000     |  0.044      0.023        0.065
+sorted10000    |  0.066    0.046    0.0154
+sorted50000    |           1.268   3.767
