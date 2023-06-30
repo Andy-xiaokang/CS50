@@ -25,14 +25,18 @@ int main(int argc, string argv[])
         }
         return 1;
     }
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < length-1; i++)
     {
         for (j = i+1; j < length; j++)
         {
-            
+            if (argv[i] == argv[j])
+            {
+                printf("character must be different");
+                return 1;
+            }
         }
     }
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv);
-
+    
 }
