@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 string get_key(string text);
-void ciphertext(string text);
+void ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
@@ -40,10 +40,20 @@ int main(int argc, string argv[])
     }
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv);
-    ciphertext(argv);
+    ciphertext(key, plaintext);
 }
 
 string get_key(string text)
+{
+    int length = strlen(text);
+    for (i = 0; i< length; i++)
+    {
+        text[i] = toupper(text[i]);
+    }
+    return text;
+}
+
+void ciphertext(string key, string plaintext)
 {
     
 }
