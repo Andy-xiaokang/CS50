@@ -18,6 +18,7 @@ int main(int argc, string argv[])
     {
         if (valid(argv[1]))
         {
+            printf("valid");
             string plaintext = get_string("plaintext: ");
             string key = get_key(argv[1]);
             print_ciphertext(key, plaintext);
