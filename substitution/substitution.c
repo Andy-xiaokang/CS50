@@ -11,6 +11,7 @@ int main(int argc, string argv[])
     printf("1");
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv[1]);
+    print_ciphertext(key, plaintext);
     if (argc < 2 || argc > 2)
     {
         printf("Usage: ./substitution key\n");
@@ -43,7 +44,7 @@ int main(int argc, string argv[])
     }
 
 
-    print_ciphertext(key, plaintext);
+
 
 }
 
