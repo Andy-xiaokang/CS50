@@ -17,11 +17,8 @@ int main(int argc, string argv[])
 
     else
     {
-        printf("1");
-        printf
         if (valid(argv[1]))
         {
-            printf("valid\n");
             string plaintext = get_string("plaintext: ");
             string key = get_key(argv[1]);
             print_ciphertext(key, plaintext);
@@ -37,7 +34,7 @@ bool valid(string text)
 {
     if (strlen(text) != 26)
     {
-        printf("Key must contain 26 characters.");
+        printf("Key must contain 26 characters.\n");
         return false;
     }
     else
@@ -46,21 +43,21 @@ bool valid(string text)
             {
                 if (!(isalpha(text[i])))
                 {
-                    printf("key must be character.");
-                }
-                return false;
-            }
-        for (int i = 0; i < strlen(text)-1; i++)
-        {
-            for (int j = i+1; j < strlen(text); j++)
-            {
-                if (text[i] == text[j])
-                {
-                    printf("character must be different");
+                    printf("key must be character.\n");
                     return false;
                 }
             }
-        }
+        for (int i = 0; i < strlen(text)-1; i++)
+            {
+                for (int j = i+1; j < strlen(text); j++)
+                {
+                    if (text[i] == text[j])
+                    {
+                        printf("character must be different\n");
+                        return false;
+                    }
+                }
+            }
         return true;
     }
 }
