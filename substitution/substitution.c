@@ -3,7 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
-string get_key(string array)
+string get_key(string text);
+void ciphertext(string text);
 
 int main(int argc, string argv[])
 {
@@ -39,5 +40,10 @@ int main(int argc, string argv[])
     }
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv);
+    ciphertext(argv);
+}
 
+string get_key(string text)
+{
+    
 }
