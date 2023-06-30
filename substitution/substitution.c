@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 {
     int length =strlen(*argv);
     string plaintext = get_string("plaintext: ");
-    string key = get_key(argv);
+    string key = get_key(*argv);
     print_ciphertext(key, plaintext);
 
     if (argc < 2 || argc > 2)
