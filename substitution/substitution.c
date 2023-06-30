@@ -60,7 +60,7 @@ void print_ciphertext(string key, string plaintext)
     {
         if (islower(plaintext[i]))
         {
-            
+            ciphertext[i] = tolower(key[toupper(plaintext[i])])
         }
     }
 }
