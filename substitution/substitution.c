@@ -27,34 +27,6 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-
-    // else if (strlen(argv[1]) != 26)
-    // {
-    //     printf("Key must contain 26 characters.");
-    //     return 1;
-    // }
-    // else if
-    // for (int i = 0; i < strlen(argv[1]); i++)
-    // {
-    //     if (!(isalpha(argv[1][i])))
-    //     {
-    //         printf("key must be character.");
-    //     }
-    //     return 1;
-    // }
-    // else if
-    // for (int i = 0; i < strlen(argv[1])-1; i++)
-    // {
-    //     for (int j = i+1; j < strlen(argv[1]); j++)
-    //     {
-    //         if (argv[1][i] == argv[1][j])
-    //         {
-    //             printf("character must be different");
-    //             return 1;
-    //         }
-    //     }
-    // }
-    printf("1");
 }
 
 bool valid(string text)
@@ -85,6 +57,7 @@ bool valid(string text)
                 }
             }
         }
+        return true;
     }
 }
 
