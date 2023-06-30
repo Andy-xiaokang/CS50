@@ -55,8 +55,39 @@ int main(int argc, string argv[])
     //     }
     // }
     printf("1");
-
 }
+
+bool valid(string text)
+{
+    if (strlen(text) != 26)
+    {
+        printf("Key must contain 26 characters.");
+        return false;
+    }
+    else
+    {
+        for (int i = 0; i < strlen(text); i++)
+            {
+                if (!(isalpha(text[i])))
+                {
+                    printf("key must be character.");
+                }
+                return false;
+            }
+        for (int i = 0; i < strlen(text)-1; i++)
+        {
+            for (int j = i+1; j < strlen(text); j++)
+            {
+                if (text[i] == text[j])
+                {
+                    printf("character must be different");
+                    return false;
+                }
+            }
+        }
+    }
+}
+
 
 string get_key(string text)
 {
