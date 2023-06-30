@@ -8,12 +8,13 @@ void print_ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
-    int length =strlen(argv[1]);
+
     if (argc < 2 || argc > 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
+    int length =strlen(argv[1]);
     if (length != 26)
     {
         printf("Key must contain 26 characters.");
