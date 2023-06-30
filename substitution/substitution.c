@@ -5,6 +5,7 @@
 
 string get_key(string text);
 void print_ciphertext(string key, string plaintext);
+bool valid(string text);
 
 int main(int argc, string argv[])
 {
@@ -12,6 +13,19 @@ int main(int argc, string argv[])
     {
         printf("Usage: ./substitution key\n");
         return 1;
+    }
+    else
+    {
+        if (valid(argv[1]))
+        {
+            string plaintext = get_string("plaintext: ");
+            string key = get_key(argv[1]);
+            print_ciphertext(key, plaintext);
+        }
+        else
+        {
+            return 1;
+        }
     }
 
     // else if (strlen(argv[1]) != 26)
@@ -41,9 +55,7 @@ int main(int argc, string argv[])
     //     }
     // }
     printf("1");
-    string plaintext = get_string("plaintext: ");
-    string key = get_key(argv[1]);
-    print_ciphertext(key, plaintext);
+
 }
 
 string get_key(string text)
