@@ -5,6 +5,7 @@ int main(int argc, string argv[])
 {
     while (argc < 2 || argc > 2)
     {
-        
+        printf("Usage: ./substitution key\n");
+        return 1;
     }
 }
