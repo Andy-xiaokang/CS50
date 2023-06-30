@@ -8,21 +8,18 @@ void print_ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
-    printf("1");
-    string plaintext = get_string("plaintext: ");
-    string key = get_key(argv[1]);
-    print_ciphertext(key, plaintext);
     if (argc < 2 || argc > 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
 
-    if (strlen(argv[1]) != 26)
+    else if (strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.");
         return 1;
     }
+    else if
     for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (!(isalpha(argv[1][i])))
@@ -31,6 +28,7 @@ int main(int argc, string argv[])
         }
         return 1;
     }
+    else if
     for (int i = 0; i < strlen(argv[1])-1; i++)
     {
         for (int j = i+1; j < strlen(argv[1]); j++)
@@ -42,10 +40,10 @@ int main(int argc, string argv[])
             }
         }
     }
-
-
-
-
+    printf("1");
+    string plaintext = get_string("plaintext: ");
+    string key = get_key(argv[1]);
+    print_ciphertext(key, plaintext);
 }
 
 string get_key(string text)
