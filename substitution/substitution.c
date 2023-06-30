@@ -8,7 +8,11 @@ void print_ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
-    int length =strlen(argv);
+
+    string plaintext = get_string("plaintext: ");
+    string key = get_key(argv);
+    print_ciphertext(key, plaintext);
+    int length =strlen(key);
     if (argc < 2 || argc > 2)
     {
         printf("Usage: ./substitution key\n");
@@ -38,9 +42,7 @@ int main(int argc, string argv[])
             }
         }
     }
-    string plaintext = get_string("plaintext: ");
-    string key = get_key(argv);
-    print_ciphertext(key, plaintext);
+
 }
 
 string get_key(string text)
