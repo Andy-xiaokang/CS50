@@ -16,6 +16,7 @@ int main(int argc, string argv[])
     }
     else
     {
+        printf("1");
         if (valid(argv[1]))
         {
             printf("valid\n");
