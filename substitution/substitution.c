@@ -8,6 +8,7 @@ void print_ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
+    printf("1");
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv[1]);
     if (argc < 2 || argc > 2)
