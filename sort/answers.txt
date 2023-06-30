@@ -1,14 +1,14 @@
-sort1 uses: TODO
+sort1 uses: bubble sort
 
-How do you know?: TODO
+How do you know?: the random50000 takes 8.939s(much more slowly than sort2 and sort3), but the reversed50000 and sorted50000 only takes 0.6328s and 1.14 respecttively
 
-sort2 uses: TODO
+sort2 uses: merge sort
 
-How do you know?: TODO
+How do you know?: the random50000 only takes 2.086 seconds, which is much more slowly than sort1 and sort3
 
-sort3 uses: TODO
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?: random50000 is a little quicker than sort1 but much more slowly than sort2, meanwhile the reversed50000 and sorted50000 is much more slowly than sort1
 
 
 *****************************************
