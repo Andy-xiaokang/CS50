@@ -21,17 +21,17 @@ int main(int argc, string argv[])
     }
     for (int i = 0; i < length; i++)
     {
-        if (!(isalpha(argv[i])))
+        if (!(isalpha(argv[1][i])))
         {
-            printf("key must be character.")
+            printf("key must be character.");
         }
         return 1;
     }
     for (int i = 0; i < length-1; i++)
     {
-        for (j = i+1; j < length; j++)
+        for (int j = i+1; j < length; j++)
         {
-            if (argv[i] == argv[j])
+            if (argv[1][i] == argv[1][j])
             {
                 printf("character must be different");
                 return 1;
@@ -48,7 +48,7 @@ int main(int argc, string argv[])
 string get_key(string text)
 {
     int length = strlen(text);
-    for (i = 0; i< length; i++)
+    for (int i = 0; i< length; i++)
     {
         text[i] = toupper(text[i]);
     }
@@ -62,12 +62,12 @@ void print_ciphertext(string key, string plaintext)
     {
         if (islower(plaintext[i]))
         {
-            ciphertext[i] = tolower(key[toupper(plaintext[i])-65])
+            ciphertext[i] = tolower(key[toupper(plaintext[i])-65]);
         }
         else if (isupper(plaintext[i]))
         {
-            ciphertext[i] = key[plaintext[i]-65]
+            ciphertext[i] = key[plaintext[i]-65];
         }
     }
-    printf("ciphertext: %s\n", ciphertext)
+    printf("ciphertext: %s\n", ciphertext);
 }
