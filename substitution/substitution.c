@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 string get_key(string text);
-void ciphertext(string key, string plaintext);
+void print_ciphertext(string key, string plaintext);
 
 int main(int argc, string argv[])
 {
@@ -40,7 +40,7 @@ int main(int argc, string argv[])
     }
     string plaintext = get_string("plaintext: ");
     string key = get_key(argv);
-    ciphertext(key, plaintext);
+    print_ciphertext(key, plaintext);
 }
 
 string get_key(string text)
@@ -53,7 +53,7 @@ string get_key(string text)
     return text;
 }
 
-void ciphertext(string key, string plaintext)
+void print_ciphertext(string key, string plaintext)
 {
-    
+    string 
 }
