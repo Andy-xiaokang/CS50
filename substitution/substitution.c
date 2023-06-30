@@ -64,7 +64,8 @@ void print_ciphertext(string key, string plaintext)
         }
         else if (isupper(plaintext[i]))
         {
-            ciphertext[i] = key[]
+            ciphertext[i] = key[plaintext[i]-65]
         }
     }
+    printf("ciphertext: %s\n", ciphertext)
 }
