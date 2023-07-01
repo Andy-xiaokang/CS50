@@ -142,9 +142,9 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     // TODO
-    for (i = 0, i < voter_count, i++)
+    for (i = 0; i < voter_count; i++)
     {
-        for (j = 0, j < candidate_count, j++)
+        for (j = 0; j < candidate_count; j++)
         {
             if ( candidates[preference[i][j]].eliminated == false )
             {
@@ -160,7 +160,17 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    
+    int overhalf = voter_count/2 + 1;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes >= overhalf)
+        {
+            printf("%s\n", candidates[i].name);
+            return true;
+        }
+
+    }
+    return false;
 }
 
 // Return the minimum number of votes any remaining candidate has
