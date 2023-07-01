@@ -186,14 +186,16 @@ int find_min(void)
     //     }
     // }
     // return min;
-    int min;
+
     for (int i = 0; i < candidate_count; i++)
     {
-        if (!candidates[i].eliminated)
+        if (candidates[i].eliminated)
         {
-            min = candidates[i].votes;
+            candidates[i].votes = MAX_VOTERS;
         }
     }
+    int min = candidates[0].votes;
+    for (int i = )
 }
 
 // Return true if the election is tied between all candidates, false otherwise
