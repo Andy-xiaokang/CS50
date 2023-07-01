@@ -144,7 +144,7 @@ void tabulate(void)
     // TODO
     for (i = 0, i < voter_count, i++)
     {
-        for (j = 0, j < cadidate_count, j++)
+        for (j = 0, j < candidate_count, j++)
         {
             if ( candidates[preference[i][j]].eliminated == false )
             {
