@@ -125,6 +125,21 @@ void record_preferences(int ranks[])
 }
 
 // Record pairs of candidates where one is preferred over the other
+//this block is too hard so I search some solution for reference
+bool exist_cycle(int winner, int loser)
+{
+    if (winner == loser)
+    {
+        return true;
+    }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (locked[loser][i])     //exist the potential 
+        {
+
+        }
+    }
+}
 void add_pairs(void)
 {
     for (int i = 0; i < candidate_count; i++)
