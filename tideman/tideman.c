@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max number of candidates
 #define MAX 9
@@ -115,7 +116,7 @@ void record_preferences(int ranks[])
 {
     for (int i = 0; i < candidate_count - 1; i++)
     {
-        for (j = i + 1; j < candidate_count; j++ )
+        for (int j = i + 1; j < candidate_count; j++ )
         {
             preferences[ranks[i]][ranks[j]]++;
         }
@@ -147,7 +148,7 @@ void sort_pairs(void)
     pair swap;
     for (int i = 0; i < pair_count - 1; i++)   //selection sort
     {
-        for (j = i + 1; j < pair_count; j++)
+        for (int j = i + 1; j < pair_count; j++)
         {
             if ( preferences[pairs[j].winner][pairs[j].loser] > preferences[pairs[i].winner][pairs[i].loser] )
             {
@@ -169,7 +170,7 @@ void lock_pairs(void)
     {
         for (int j = 0; j < i - 1; j++)
         {
-            if ( pairs[i].losers == pairs[j].winner )
+            if ( pairs[i].loser == pairs[j].winner )
             {
                 continue;
             }
@@ -202,7 +203,10 @@ void print_winner(void)
     }
     for (int i = 0; i < candidate_count; i++)
     {
-        if ()
+        if (winner[i] == true)
+        {
+            printf("%s\n", candidates[i]);
+        }
     }
     return;
 }
