@@ -176,7 +176,7 @@ void lock_pairs(void)
         {
             if ( pairs[i].loser == pairs[j].winner )
             {
-                continue;
+                locked[pairs[i].winner][pairs[i].loser] = false;
             }
         }
     }
