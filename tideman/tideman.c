@@ -192,12 +192,7 @@ void print_winner(void)
             if (locked[j][i] == true)
             {
                 break;
-                if (locked[candidate_count][i] == false)
-                {
-                    printf("%s\n", candidates[i]);
-                }
             }
-
         }
     }
     return;
