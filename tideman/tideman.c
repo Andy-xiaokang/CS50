@@ -174,9 +174,13 @@ bool exist_cycle(int winner, int loser)
     {
         if (locked[loser][i])     //exist the potential
         {
-            exist_cycle(loser,i);
+            if (exist_cycle(winner,i))
+            {
+                return true;
+            }
         }
     }
+    return false;
 }
 
 void lock_pairs(void)
