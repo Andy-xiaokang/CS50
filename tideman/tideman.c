@@ -174,7 +174,7 @@ bool exist_cycle(int winner, int loser)
     {
         if (locked[loser][i])     //exist the potential
         {
-            
+            exist_cycle(loser,i);
         }
     }
 }
