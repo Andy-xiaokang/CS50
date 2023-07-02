@@ -185,21 +185,9 @@ bool exist_cycle(int winner, int loser)
 
 void lock_pairs(void)
 {
-    // locked[pairs[0].winner][pairs[0].loser] = true;
-    // locked[pairs[1].winner][pairs[1].loser] = true;
     for (int i = 0; i < pair_count; i++)
     {
-        locked[pairs[i].winner][pairs[i].loser] = true;
-    }
-    for (int i = 2; i < pair_count; i++)
-    {
-        for (int j = 0; j < i - 1; j++)
-        {
-            if ( pairs[i].loser == pairs[j].winner )
-            {
-                locked[pairs[i].winner][pairs[i].loser] = false;
-            }
-        }
+        
     }
     return;
 }
