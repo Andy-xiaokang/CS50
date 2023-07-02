@@ -187,7 +187,10 @@ void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; i++)
     {
-        
+        if (!exist_cycle(pairs[i].winner, pairs[i].loser))
+        {
+            
+        }
     }
     return;
 }
