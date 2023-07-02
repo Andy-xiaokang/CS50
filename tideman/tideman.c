@@ -189,7 +189,7 @@ void lock_pairs(void)
     {
         if (!exist_cycle(pairs[i].winner, pairs[i].loser))
         {
-            
+            locked
         }
     }
     return;
