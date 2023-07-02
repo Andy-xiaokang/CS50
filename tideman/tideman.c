@@ -163,7 +163,7 @@ void sort_pairs(void)
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
-//this block is too hard so I search some solution for reference
+// this block is too hard so I search some solution for reference
 bool exist_cycle(int winner, int loser)
 {
     if (winner == loser)
@@ -174,7 +174,7 @@ bool exist_cycle(int winner, int loser)
     {
         if (locked[loser][i])     //exist the potential
         {
-
+            
         }
     }
 }
