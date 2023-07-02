@@ -145,13 +145,15 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     pair swap;
-    for (int i = 0; i < pair_count - 1; i++)
+    for (int i = 0; i < pair_count - 1; i++)   //selection sort
     {
         for (j = i + 1; j < pair_count; j++)
         {
             if ( preferences[pairs[j].winner][pairs[j].loser] > preferences[pairs[i].winner][pairs[i].loser] )
             {
-                
+                swap = pairs[i];
+                pairs[i] = pairs[j];
+                pairs[j] = pairs[i];
             }
         }
     }
