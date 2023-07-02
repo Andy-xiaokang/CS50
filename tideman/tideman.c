@@ -149,7 +149,7 @@ void sort_pairs(void)
     {
         for (j = i + 1; j < pair_count; j++)
         {
-            
+            if ( preferences[][])
         }
     }
     return;
