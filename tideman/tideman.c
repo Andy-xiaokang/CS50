@@ -153,7 +153,7 @@ void sort_pairs(void)
             {
                 swap = pairs[i];
                 pairs[i] = pairs[j];
-                pairs[j] = pairs[i];
+                pairs[j] = swap;
             }
         }
     }
