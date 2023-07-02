@@ -169,7 +169,7 @@ void lock_pairs(void)
     {
         for (int j = 0; j < i - 1; j++)
         {
-            
+            if ()
         }
     }
     return;
