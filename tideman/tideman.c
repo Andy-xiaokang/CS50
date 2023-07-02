@@ -149,7 +149,7 @@ void sort_pairs(void)
     {
         for (j = i + 1; j < pair_count; j++)
         {
-            if ( preferences[][])
+            if ( preferences[pairs[j].winner][pairs[j].loser] )
         }
     }
     return;
