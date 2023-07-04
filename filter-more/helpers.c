@@ -94,7 +94,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             int gxr, gxg, gxb;
             int gyr, gyg, gyb;
-            
+            gxr = 
         }
     }
     return;
