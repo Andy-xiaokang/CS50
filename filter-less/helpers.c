@@ -78,6 +78,15 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 //I tried to divided this into corner, edge, and the piexls in the middle, but I found a more fascinating way to solve this problem
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    
+    RGBTRIPLE tmp[height][width];
+    for(int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            int rs = 0, gs = 0, bs = 0;
+            int pc =0;
+            for (int )
+        }
+    }
     return;
 }
