@@ -37,7 +37,10 @@ int main(int argc, char *argv[])
     uint8_t header[HEADER_SIZE];
     for (int i = 0; i < HEADER_SIZE; i++)
     {
-        
+        if (fread(&header[i], sizeof(uint8_t), 1, input))
+        {
+            fwi
+        }
     }
 
 
