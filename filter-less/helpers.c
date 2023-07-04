@@ -31,17 +31,28 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             {
                 image[i][j].rgbtRed = 255;
             }
-            else if (sepiaGreen > 255)
+            else
+            {
+                image[i][j].rgbtRed = (BYTE) sepiaRed;
+            }
+            if (sepiaGreen > 255)
             {
                 image[i][j].rgbtGreen = 255;
             }
-            else if (sepiaBlue > 255)
+            else
+            {
+                image[i][j].rgbtGreen = (BYTE) sepiaGreen;
+            }
+            if (sepiaBlue > 255)
             {
                 image[i][j].rgbtBlue = 255;
             }
-            image[i][j].rgbtRed = (BYTE) sepiaRed;
-            image[i][j].rgbtGreen = (BYTE) sepiaGreen;
-            image[i][j].rgbtBlue = (BYTE) sepiaBlue;
+            else
+            {
+                image[i][j].rgbtBlue = (BYTE) sepiaBlue;
+            }
+
+
         }
     }
     return;
