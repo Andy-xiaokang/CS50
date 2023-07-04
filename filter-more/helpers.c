@@ -102,8 +102,15 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             gyr = image[i-1][j-1].rgbtRed*(-1)+ image[i-1][j].rgbtRed*(-2) + image[i-1][j+1].rgbtRed*(-1) + 0 + image[i+1][j-1].rgbtRed*(1)+ image[i+1][j].rgbtRed*(2) + image[i+1][j+1].rgbtRed*(1);
             gyg = image[i-1][j-1].rgbtGreen*(-1)+ image[i-1][j].rgbtGreen*(-2) + image[i-1][j+1].rgbtGreen*(-1) + 0 + image[i+1][j-1].rgbtGreen*(1)+ image[i+1][j].rgbtGreen*(2) + image[i+1][j+1].rgbtGreen*(1);
             gyb = image[i-1][j-1].rgbtBlue*(-1)+ image[i-1][j].rgbtBlue*(-2) + image[i-1][j+1].rgbtBlue*(-1) + 0 + image[i+1][j-1].rgbtBlue*(1)+ image[i+1][j].rgbtBlue*(2) + image[i+1][j+1].rgbtBlue*(1);
-            tmp[i][j].rgbtRed = sqrt(gxr*gxr+gyr*gyr) > 255 ? 255:
+            double a = round(sqrt(gxr*gxr+gyr*gyr));
+            double b = round(sqrt(gxg*gxg+gyg*gyg));
+            double c = round(sqrt(gxb*gxb+gyb*gyb));
+
+            tmp[i][j].rgbtRed =  a > 255 ? 255 : a;
+            tmp[i][j].rgbtGreen = b > 255 ? 255 : b;
+            tmp[i][j].rgbtBlue = c > 255 ? 255 : c;
         }
     }
+    
     return;
 }
