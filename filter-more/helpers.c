@@ -100,27 +100,27 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             int gxr, gxg, gxb;
             int gyr, gyg, gyb;
-            gxr = image[i-1][j-1].rgbtRed*(-1)+ 0 + image[i-1][j+1].rgbtRed + image[i][j-1].rgbtRed*(-2) + 0 + image[i][j+1].rgbtRed*2 + image[i+1][j-1].rgbtRed*(-1) + 0 + image[i+1][j+1].rgbtRed*1;
-            gxg = image[i-1][j-1].rgbtGreen*(-1)+ 0 + image[i-1][j+1].rgbtGreen + image[i][j-1].rgbtGreen*(-2) + 0 + image[i][j+1].rgbtGreen*2 + image[i+1][j-1].rgbtGreen*(-1) + 0 + image[i+1][j+1].rgbtGreen*1;
-            gxb = image[i-1][j-1].rgbtBlue*(-1)+ 0 + image[i-1][j+1].rgbtBlue + image[i][j-1].rgbtBlue*(-2) + 0 + image[i][j+1].rgbtBlue*2 + image[i+1][j-1].rgbtBlue*(-1) + 0 + image[i+1][j+1].rgbtBlue*1;
+            gxr = tmp[i-1][j-1].rgbtRed*(-1)+ 0 + tmp[i-1][j+1].rgbtRed + tmp[i][j-1].rgbtRed*(-2) + 0 + tmp[i][j+1].rgbtRed*2 + tmp[i+1][j-1].rgbtRed*(-1) + 0 + tmp[i+1][j+1].rgbtRed*1;
+            gxg = tmp[i-1][j-1].rgbtGreen*(-1)+ 0 + tmp[i-1][j+1].rgbtGreen + tmp[i][j-1].rgbtGreen*(-2) + 0 + tmp[i][j+1].rgbtGreen*2 + tmp[i+1][j-1].rgbtGreen*(-1) + 0 + tmp[i+1][j+1].rgbtGreen*1;
+            gxb = tmp[i-1][j-1].rgbtBlue*(-1)+ 0 + tmp[i-1][j+1].rgbtBlue + tmp[i][j-1].rgbtBlue*(-2) + 0 + tmp[i][j+1].rgbtBlue*2 + tmp[i+1][j-1].rgbtBlue*(-1) + 0 + tmp[i+1][j+1].rgbtBlue*1;
 
-            gyr = image[i-1][j-1].rgbtRed*(-1)+ image[i-1][j].rgbtRed*(-2) + image[i-1][j+1].rgbtRed*(-1) + 0 + image[i+1][j-1].rgbtRed*(1)+ image[i+1][j].rgbtRed*(2) + image[i+1][j+1].rgbtRed*(1);
-            gyg = image[i-1][j-1].rgbtGreen*(-1)+ image[i-1][j].rgbtGreen*(-2) + image[i-1][j+1].rgbtGreen*(-1) + 0 + image[i+1][j-1].rgbtGreen*(1)+ image[i+1][j].rgbtGreen*(2) + image[i+1][j+1].rgbtGreen*(1);
-            gyb = image[i-1][j-1].rgbtBlue*(-1)+ image[i-1][j].rgbtBlue*(-2) + image[i-1][j+1].rgbtBlue*(-1) + 0 + image[i+1][j-1].rgbtBlue*(1)+ image[i+1][j].rgbtBlue*(2) + image[i+1][j+1].rgbtBlue*(1);
+            gyr = tmp[i-1][j-1].rgbtRed*(-1)+ tmp[i-1][j].rgbtRed*(-2) + tmp[i-1][j+1].rgbtRed*(-1) + 0 + tmp[i+1][j-1].rgbtRed*(1)+ tmp[i+1][j].rgbtRed*(2) + tmp[i+1][j+1].rgbtRed*(1);
+            gyg = tmp[i-1][j-1].rgbtGreen*(-1)+ tmp[i-1][j].rgbtGreen*(-2) + tmp[i-1][j+1].rgbtGreen*(-1) + 0 + tmp[i+1][j-1].rgbtGreen*(1)+ tmp[i+1][j].rgbtGreen*(2) + tmp[i+1][j+1].rgbtGreen*(1);
+            gyb = tmp[i-1][j-1].rgbtBlue*(-1)+ tmp[i-1][j].rgbtBlue*(-2) + tmp[i-1][j+1].rgbtBlue*(-1) + 0 + tmp[i+1][j-1].rgbtBlue*(1)+ tmp[i+1][j].rgbtBlue*(2) + tmp[i+1][j+1].rgbtBlue*(1);
             double a = round(sqrt(gxr*gxr+gyr*gyr));
             double b = round(sqrt(gxg*gxg+gyg*gyg));
             double c = round(sqrt(gxb*gxb+gyb*gyb));
 
-            tmp[i][j].rgbtRed =  a > 255 ? 255 : a;
-            tmp[i][j].rgbtGreen = b > 255 ? 255 : b;
-            tmp[i][j].rgbtBlue = c > 255 ? 255 : c;
+            buffer[i][j].rgbtRed =  a > 255 ? 255 : a;
+            buffer[i][j].rgbtGreen = b > 255 ? 255 : b;
+            buffer[i][j].rgbtBlue = c > 255 ? 255 : c;
         }
     }
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
-            image[i][j] = tmp[i][j];
+            image[i][j] = buffer[i+1][j+1];
         }
     }
     return;
