@@ -94,7 +94,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             int gxr, gxg, gxb;
             int gyr, gyg, gyb;
-            gxr = 
+            gxr = image[i-1][j-1].rgbtRed*(-1)+ 0 + image[i-1][j+1].rgbtRed + image[i][j-1]*(-2).rgbtRed + 0 + image[i][j+1].rgbtRed*2 + image[i+1][j-1].rgbtRed*(-1) + 0 + image[i+1][j+1].rgbtRed*1;
+            gxg = image[i-1][j-1].rgbtGreen*(-1)+ 0 + image[i-1][j+1].rgbtGreen + image[i][j-1]*(-2).rgbtGreen + 0 + image[i][j+1].rgbtGreen*2 + image[i+1][j-1].rgbtGreen*(-1) + 0 + image[i+1][j+1].rgbtGreen*1;
+            gxb = image[i-1][j-1].rgbtBlue*(-1)+ 0 + image[i-1][j+1].rgbtBlue + image[i][j-1]*(-2).rgbtBlue + 0 + image[i][j+1].rgbtBlue*2 + image[i+1][j-1].rgbtBlue*(-1) + 0 + image[i+1][j+1].rgbtBlue*1;
+
+            gyr = image[i-1][j-1].rgbtRed*(-1)+ 0 + image[i-1][j+1].rgbtRed + image[i][j-1]*(-2).rgbtRed + 0 + image[i][j+1].rgbtRed*2 + image[i+1][j-1].rgbtRed*(-1) + 0 + image[i+1][j+1].rgbtRed*1;
+            gyg = image[i-1][j-1].rgbtGreen*(-1)+ 0 + image[i-1][j+1].rgbtGreen + image[i][j-1]*(-2).rgbtGreen + 0 + image[i][j+1].rgbtGreen*2 + image[i+1][j-1].rgbtGreen*(-1) + 0 + image[i+1][j+1].rgbtGreen*1;
+            gyb = image[i-1][j-1].rgbtBlue*(-1)+ 0 + image[i-1][j+1].rgbtBlue + image[i][j-1]*(-2).rgbtBlue + 0 + image[i][j+1].rgbtBlue*2 + image[i+1][j-1].rgbtBlue*(-1) + 0 + image[i+1][j+1].rgbtBlue*1;
         }
     }
     return;
