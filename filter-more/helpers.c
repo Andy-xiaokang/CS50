@@ -83,7 +83,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             if (i == 0 || i == height - 1 || j == 0 || j== width - 1)
             {
-                image[i][j].rgbtRed = image[i][j].rgbtGreen = image[i][j].rgbtBlur = 
+                image[i][j].rgbtRed = image[i][j].rgbtGreen = image[i][j].rgbtBlur = 0;
+            }
+            else
+            {
+                
             }
         }
     }
