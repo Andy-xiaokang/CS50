@@ -95,7 +95,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
                     if( col + j < 0 || col + j > width - 1)
                     {
-                        
+                        continue;
                     }
                     pc++;
                     rs += image[i+row][j+col].rgbtRed;
