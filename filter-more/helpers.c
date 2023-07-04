@@ -93,7 +93,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
         }
     }
-    
+    RGBTRIPLE buffer[height+2][width+2];
     for (int i = 1; i < height-1; i++)
     {
         for (int j = 1; j < width - 1; j++)
