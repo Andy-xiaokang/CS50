@@ -39,12 +39,13 @@ int main(int argc, char *argv[])
     {
         if (fread(&header[i], sizeof(uint8_t), 1, input))
         {
-            fwi
+            fwrite(&header[i], sizeof(uint8_t), 1, output);
         }
     }
 
 
     // TODO: Read samples from input file and write updated data to output file
+    
 
     // Close files
     fclose(input);
