@@ -87,8 +87,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 tmp[i][j].rgbtRed = tmp[i][j].rgbtGreen = tmp[i][j].rgbtBlue = 0;
             }
+            else
+            {
+                tmp[i+1][j+1] = image[i][j];
+            }
         }
     }
+    
     for (int i = 1; i < height-1; i++)
     {
         for (int j = 1; j < width - 1; j++)
