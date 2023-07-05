@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     BYTE buffer[BLOCK_SIZE];
+    char filename[8];
     while (fread(buffer, 1, BLOCK_SIZE, file) == 512)
     {
         
