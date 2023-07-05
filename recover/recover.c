@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         // {
         //     fwrite(buffer, 1, BLOCK_SIZE, output);
         // }
-        // if new jpeg file close the old file
+        // if new jpeg file, close the old file you have done writing it
     }
 
     fclose(file);
