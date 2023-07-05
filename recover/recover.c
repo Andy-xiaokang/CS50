@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef uint8_t BYTE;
+int BLOCK_SIZE 512;
+
 int main(int argc, char *argv[])
 {
     if (argc != 2)
@@ -14,5 +17,5 @@ int main(int argc, char *argv[])
         printf("Could not open file.\n");
         return 1;
     }
-    
+
 }
