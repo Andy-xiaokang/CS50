@@ -8,5 +8,5 @@ int main(int argc, char *argv[])
         printf("Usage: ./recover IMAGE");
         return 1;
     }
-    
+    FILE *file = fopen()
 }
