@@ -42,7 +42,10 @@ int main(int argc, char *argv[])
 
         }
         //write data into the file
-        fwrite(buffer, 1, BLOCK_SIZE, output);
+        if (count !=0 )
+        {
+            fwrite(buffer, 1, BLOCK_SIZE, output);
+        }
 
     }
     fclose(file);
