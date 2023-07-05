@@ -29,11 +29,10 @@ int main(int argc, char *argv[])
             output = fopen(filename, "w");
             fwrite(buffer, 1, BLOCK_SIZE, output);
             count++;
-            fclose(output);
         }
         else
         {
-
+            fwrite(buffer, 1, BLOCK_SIZE, out)
         }
     }
 }
