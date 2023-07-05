@@ -48,4 +48,6 @@ int main(int argc, char *argv[])
     }
     fclose(file);
     fclose(output);
+    free(buffer);
+    free(filename);
 }
