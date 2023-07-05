@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     char filename[8];
     int count = 0;
     FILE *output = NULL;
-    while (fread(buffer, 1, BLOCK_SIZE, file) == 512)
+    while (fread(&buffer, 1, BLOCK_SIZE, file) == 512)
     {
         //if the first picture, create the first file and add count
         if (count == 0 && buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
