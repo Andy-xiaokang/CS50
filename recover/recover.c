@@ -30,11 +30,19 @@ int main(int argc, char *argv[])
             fwrite(buffer, 1, BLOCK_SIZE, output);
             count++;
         }
+        //if not the first, close the file before and create a new file
+        if (count != 0 && buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        {
+            fclose(output);
+            sprintf(filename, "%03i.jpg", count);
+            output = fopen(filename, "w");
+            fwrite(buffer, 1, BLOCK_SIZE, output);
+            count++;
+        }
         if (count++)
         {
             fwrite(buffer, 1, BLOCK_SIZE, output);
         }
-        
     }
 
     fclose(file);
