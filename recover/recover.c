@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         {
             sprintf(filename, "%03i.jpg", count);
             output = fopen(filename, "w");
-            fwrite(buffer, 1, BLOCK_SIZE, output);
+            // fwrite(buffer, 1, BLOCK_SIZE, output);
             count++;
         }
         //if not the first, close the file before and create a new file
@@ -38,9 +38,9 @@ int main(int argc, char *argv[])
             fclose(output);
             sprintf(filename, "%03i.jpg", count);
             output = fopen(filename, "w");
-            fwrite(buffer, 1, BLOCK_SIZE, output);
+            // fwrite(buffer, 1, BLOCK_SIZE, output);
             count++;
-            continue;
+
         }
         if (count++)
         {
