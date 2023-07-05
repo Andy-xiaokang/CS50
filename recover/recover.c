@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-typedef uint8_t BYTE;
 int BLOCK_SIZE = 512;
 
 int main(int argc, char *argv[])
@@ -18,7 +17,7 @@ int main(int argc, char *argv[])
         printf("Could not open file.\n");
         return 1;
     }
-    BYTE buffer[BLOCK_SIZE];
+    uint8_t buffer[BLOCK_SIZE];
     char filename[8];
     int count = 0;
     FILE *output = NULL;
