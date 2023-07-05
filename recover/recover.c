@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
             count++;
 
         }
-        if (count++)
+        if (count)
         {
             fwrite(buffer, 1, BLOCK_SIZE, output);
         }
