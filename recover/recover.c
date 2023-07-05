@@ -30,6 +30,11 @@ int main(int argc, char *argv[])
             fwrite(buffer, 1, BLOCK_SIZE, output);
             count++;
         }
+        if (count++)
+        {
+            fwrite(buffer, 1, BLOCK_SIZE, output);
+        }
+        
     }
 
     fclose(file);
