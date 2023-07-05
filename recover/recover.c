@@ -19,8 +19,12 @@ int main(int argc, char *argv[])
     }
     BYTE buffer[BLOCK_SIZE];
     char filename[8];
+    int count = 0;
     while (fread(buffer, 1, BLOCK_SIZE, file) == 512)
     {
-        
+        if (buffer[0] == 0xff && buffer[1] == 0xdf && buffer[2] == 0xff && (buffer[3]&0xf0) == 0xe0)
+        {
+            
+        }
     }
 }
