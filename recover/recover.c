@@ -32,7 +32,10 @@ int main(int argc, char *argv[])
         }
         else
         {
-            fwrite(buffer, 1, BLOCK_SIZE, out)
+            fwrite(buffer, 1, BLOCK_SIZE, output);
         }
     }
+
+    fclose(file);
+    fclose(output);
 }
