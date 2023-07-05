@@ -17,5 +17,9 @@ int main(int argc, char *argv[])
         printf("Could not open file.\n");
         return 1;
     }
-    while (fread())
+    BYTE buffer[BLOCK_SIZE];
+    while (fread(buffer, 1, BLOCK_SIZE, file) == 512)
+    {
+
+    }
 }
