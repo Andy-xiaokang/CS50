@@ -26,7 +26,12 @@ int main(int argc, char *argv[])
         {
             filename = sprintf(filename, "%03i.jpg", count);
             FILE *output = fopen(filename, "w");
-            fwrite()
+            fwrite(buffer, 1, BLOCK_SIZE, output);
+            count++;
+        }
+        else
+        {
+            
         }
     }
 }
