@@ -63,9 +63,8 @@ bool load(const char *dictionary)
         hash_value = hash(word);
         new->next = table[hash_value];
         table[hash_value] = new;
-
-
     }
+    return true;
 
 }
 
