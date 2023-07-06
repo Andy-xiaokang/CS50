@@ -34,13 +34,17 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
     if (strlen(word) < 3)
     {
-        return 26*26*26;
+        return 0;
     }
     else if (word[1] == '\'' || word[2] == '\'')
     {
-        return 26*26*26;
+        return 0;
     }
-    
+    else
+    {
+        
+    }
+
     return toupper(word[0]) - 'A';
 }
 
