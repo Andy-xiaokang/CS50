@@ -2,6 +2,8 @@
 
 #include <ctype.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -14,7 +16,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = 26;
+const unsigned int N = 26*26*26 + 1;
 
 // Hash table
 node *table[N];
@@ -37,7 +39,28 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    return false;
+    FILE *file = fopen(dictionary, "r");
+    if (file == NULL)
+    {
+        return false;
+    }
+    char word[LENGTH + 1];
+    unsigned int hash_value;
+    while(fscanf(file, "%s", word) != EOF)
+    {
+        node *list = malloc(sizeof(node));
+        if (list == NULL)
+        {
+            return false;
+        }
+        list->word = word;
+        list->next = NULL;
+
+        hash_value = hash(word);
+        
+
+    }
+
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
