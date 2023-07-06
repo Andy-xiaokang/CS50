@@ -48,7 +48,7 @@ bool load(const char *dictionary)
     unsigned int hash_value;
     while(fscanf(file, "%s", word) != EOF)
     {
-        node *list = malloc(sizeof(node));
+        node *new_word = malloc(sizeof(node));
         if (list == NULL)
         {
             return false;
@@ -57,7 +57,7 @@ bool load(const char *dictionary)
         list->next = NULL;
 
         hash_value = hash(word);
-        
+
 
     }
 
