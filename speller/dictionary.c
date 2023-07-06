@@ -39,6 +39,10 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    for (int i = 0; i < N; i++)
+    {
+        table[i] = NULL;
+    }
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
@@ -48,15 +52,16 @@ bool load(const char *dictionary)
     unsigned int hash_value;
     while(fscanf(file, "%s", word) != EOF)
     {
-        node *new_word = malloc(sizeof(node));
-        if (list == NULL)
+        node *new = malloc(sizeof(node));
+        if (new == NULL)
         {
             return false;
         }
-        list->word = word;
-        list->next = NULL;
+        new->word = word;
+        new->next = NULL;
 
         hash_value = hash(word);
+        new->next = 
 
 
     }
