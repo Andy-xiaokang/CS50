@@ -108,7 +108,8 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        
+        node *tmp;
+        while ()
     }
     return false;
 }
