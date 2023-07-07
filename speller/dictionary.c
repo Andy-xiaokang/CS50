@@ -109,7 +109,10 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node *tmp;
-        while (table(i) )
+        while (table[i] != NULL)
+        {
+            tmp = table[i]
+        }
     }
     return false;
 }
