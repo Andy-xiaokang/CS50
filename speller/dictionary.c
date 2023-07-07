@@ -26,7 +26,18 @@ bool check(const char *word)
 {
     // TODO
     int hash_value = hash(word);
-    
+    node *tmp = table[hash_value];
+    while(tmp != NULL)
+    {
+        if (tmp->word == word)
+        {
+            return true;
+        }
+        else
+        {
+            tmp = tmp->next;
+        }
+    }
     return false;
 }
 
