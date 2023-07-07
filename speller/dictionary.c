@@ -21,6 +21,9 @@ const unsigned int N = 26*26*26 + 1;
 // Hash table
 node *table[N];
 
+//dictionary size
+unsigned int dic_size
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
@@ -97,8 +100,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    unsigned int i = 0;
-    while ()
+
     return 0;
 }
 
