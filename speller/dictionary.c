@@ -84,6 +84,8 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+    unsigned int i = 0;
+    while ()
     return 0;
 }
 
