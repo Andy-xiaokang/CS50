@@ -28,7 +28,6 @@ unsigned int dic_size;
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
     int hash_value = hash(word);
     node *tmp = table[hash_value];
     while(tmp != NULL)
@@ -37,10 +36,7 @@ bool check(const char *word)
         {
             return true;
         }
-        else
-        {
-            tmp = tmp->next;
-        }
+        tmp = tmp->next;
     }
     return false;
 }
@@ -67,7 +63,6 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    // TODO
     for (int i = 0; i < N; i++)
     {
         table[i] = NULL;
@@ -102,14 +97,12 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    // TODO
     return dic_size;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
     for (int i = 0; i < N; i++)
     {
         node *tmp;
