@@ -109,7 +109,7 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node *tmp;
-        while ()
+        while (table(i) )
     }
     return false;
 }
