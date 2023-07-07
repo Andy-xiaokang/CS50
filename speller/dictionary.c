@@ -115,6 +115,10 @@ bool unload(void)
             free(table[i]);
             table[i] = tmp;
         }
+        if (i = N-1 && table[i] == NULL)
+        {
+            return true
+        }
     }
     return false;
 }
