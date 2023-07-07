@@ -29,7 +29,7 @@ bool check(const char *word)
     node *tmp = table[hash_value];
     while(tmp != NULL)
     {
-        if (tmp->word == word)
+        if (strcasecmp(tmp->word, word) == 0)
         {
             return true;
         }
