@@ -4,7 +4,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <strings.h>
-
+#include <stdio.h>
+#include <string.h>
 #include "dictionary.h"
 
 // Represents a node in a hash table
@@ -119,9 +120,9 @@ bool unload(void)
             free(table[i]);
             table[i] = tmp;
         }
-        if (i = N-1 && table[N-1] == NULL)
+        if (i == N-1 && table[N-1] == NULL)
         {
-            return true
+            return true;
         }
     }
     return false;
