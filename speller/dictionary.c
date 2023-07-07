@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include <string.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -92,6 +92,7 @@ bool load(const char *dictionary)
         new->next = table[hash_value];
         table[hash_value] = new;
     }
+    fclose(file);
     return true;
 
 }
