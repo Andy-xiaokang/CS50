@@ -15,9 +15,18 @@ def checksum1(number):
     checksum1 = number % 10
     while number != 0:
         number = int(number/100)
-        
+        checksum1 = checksum1 + number % 10
+    return checksum1
 
 def checksum2(number):
+    checksum2 = 2*(number % 10)
+    if checksum2 > 10:
+        checksum2 = int(checksum2/10) + checksum2%10
+
+    while number != 0:
+        number = int(number/100)
+        if 2*(number % 10) > 9:
+            checksum2 = checksum2 + int(2*(number % 10)/10) + 2*(number % 10) 
 
 
 def check_credit(number):
