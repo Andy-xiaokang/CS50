@@ -39,7 +39,7 @@ def check_credit(number):
         print("MASTERCARD")
     elif len(number) == 16 and int(number[0]) == 4:
         print("VISA")
-    elif len(number) == 13 and int(number[0] == 4):
+    elif len(number) == 13 and int(number[0]) == 4:
         print("VISA")
     else:
         print("INVALID")
