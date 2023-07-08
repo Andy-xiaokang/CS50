@@ -3,7 +3,7 @@ def main():
     draw(height)
 
 
-def get_height()
+def get_height():
     while True:
         try:
             h = int(input("Height: "))
@@ -14,4 +14,4 @@ def get_height()
 
 def draw(h):
     for i in range(h):
-        for j in 
+        for j in
