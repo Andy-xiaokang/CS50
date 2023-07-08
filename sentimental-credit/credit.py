@@ -13,7 +13,6 @@ def main():
 
 def checksum1(number):
     checksum1 = number1 % 10
-    
 
 
 def checksum2(number):
