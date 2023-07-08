@@ -18,7 +18,7 @@ def draw(h):
             print(" ", end = "")
         for j in range(h-1-i, h):
             print("#", end = "")
-        print("##", end = "")
+        print("  ", end = "")
         for j in range(i+1):
             print("#", end = "")
         print("\n")
