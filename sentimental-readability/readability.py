@@ -23,4 +23,11 @@ def count_letters(text):
 def count_words(text):
     words = 1
     for i in range(len(text)):
+        if text[i].isspace():
+            words += 1
+    return words
+
+def count_sentences(text):
+    sentences = 0
+    for i in range(len(text)):
         
