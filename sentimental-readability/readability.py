@@ -30,4 +30,6 @@ def count_words(text):
 def count_sentences(text):
     sentences = 0
     for i in range(len(text)):
-        
+        if text[i] == "." or text[i] == "!" or text[i] == "?":
+            sentences += 1
+    return sentences
