@@ -9,4 +9,7 @@ def get_height()
             h = int(input("Height: "))
             if h > 0:
                 return h
-        ValueError: 
+        except ValueError:
+            print("Not an interger")
+
+
