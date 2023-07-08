@@ -33,7 +33,16 @@ def checksum2(number):
 
 
 def check_credit(number):
-
+    if len(number) == 15 and (int(number[0]+number[1]) == 34 or int(number[0]+number[1]) == 37):
+        print("AMEX")
+    elif len(number) == 16 and (int(number[0]+number[1]) == 51 or int(number[0]+number[1]) == 52 or int(number[0]+number[1]) == 53 or int(number[0]+number[1]) == 54 or int(number[0]+number[1]) == 55):
+        print("MASTERCARD")
+    elif len(number) == 16 and int(number[0]) == 4:
+        print("VISA")
+    elif len(number) == 13 and int(number[0] == 4):
+        print("VISA")
+    else:
+        print("INVALID")
 
 
 main()
