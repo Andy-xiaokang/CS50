@@ -12,11 +12,10 @@ def main():
 
 
 def checksum1(number):
-
+    
 
 
 def checksum2(number):
 
 
 def check_credit(number):
-    
