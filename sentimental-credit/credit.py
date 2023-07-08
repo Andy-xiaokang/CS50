@@ -12,8 +12,10 @@ def main():
 
 
 def checksum1(number):
-    checksum1 = number1 % 10
-
+    checksum1 = number % 10
+    while number != 0:
+        number = int(number/100)
+        
 
 def checksum2(number):
 
