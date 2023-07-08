@@ -15,4 +15,4 @@ def get_height():
 def draw(h):
     for i in range(h):
         for j in range(h-1-i):
-            print(" ",end = "")
+            print(" ", end = "")
