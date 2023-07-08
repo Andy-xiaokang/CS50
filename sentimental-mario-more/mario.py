@@ -12,4 +12,6 @@ def get_height()
         except ValueError:
             print("Not an interger")
 
-
+def draw(h):
+    for i in range(h):
+        for j in 
