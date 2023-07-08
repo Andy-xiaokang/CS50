@@ -15,5 +15,12 @@ def main():
 
 def count_letters(text):
     letters = 0
-    length = len(text)
-    for i in range(length)
+    for i in range(len(text)):
+        if text[i].isalpha():
+            letters += 1
+    return letters
+
+def count_words(text):
+    words = 1
+    for i in range(len(text)):
+        
