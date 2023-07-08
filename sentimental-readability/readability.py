@@ -33,3 +33,5 @@ def count_sentences(text):
         if text[i] == "." or text[i] == "!" or text[i] == "?":
             sentences += 1
     return sentences
+
+main()
