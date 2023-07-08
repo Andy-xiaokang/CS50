@@ -7,7 +7,7 @@ def get_height():
     while True:
         try:
             h = int(input("Height: "))
-            if h > 0:
+            if h > 0 and h < 9:
                 return h
         except ValueError:
             print("Not an interger")
