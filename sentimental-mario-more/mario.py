@@ -20,4 +20,5 @@ def draw(h):
             print("#", end = "")
         print("##", end = "")
         for j in range(i+1):
-            print("")
+            print("#", end = "")
+        
