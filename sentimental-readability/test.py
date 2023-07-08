@@ -1,2 +1,2 @@
-a = round(1/2)
+a = round(2/3)
 print(a)
