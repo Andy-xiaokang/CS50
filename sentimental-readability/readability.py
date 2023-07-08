@@ -12,3 +12,8 @@ def main():
         print("Before Grade 1")
     else
         print(index)
+
+def count_letters(text):
+    letters = 0
+    length = len(text)
+    for i in range(length)
