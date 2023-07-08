@@ -26,7 +26,10 @@ def checksum2(number):
     while number != 0:
         number = int(number/100)
         if 2*(number % 10) > 9:
-            checksum2 = checksum2 + int(2*(number % 10)/10) + 2*(number % 10) 
+            checksum2 = checksum2 + int(2*(number % 10)/10) + 2*(number % 10) % 10
+        else:
+            checksum2 = checksum2 + 2*(number % 10)
+    return checksum2
 
 
 def check_credit(number):
