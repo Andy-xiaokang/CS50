@@ -25,7 +25,7 @@ def main():
         str[reader.fieldnames[i]] = longest_match(dna, reader.fieldnames[i])
 
     # TODO: Check database for matching profiles
-
+    
     return
 
 
