@@ -32,8 +32,7 @@ def main():
                 match_number += 1
         if match_number == len(str):
             print(data['name'])
-
-    return
+            return
     print("No match")
 
 
