@@ -31,7 +31,7 @@ def main():
             if int(data[reader.fieldnames[i]]) == str[i-1]:
                 match_number += 1
         if match_number == len(str):
-            print(data['name])
+            print(data['name'])
 
     return
 
