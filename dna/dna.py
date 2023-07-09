@@ -26,7 +26,8 @@ def main():
 
     # TODO: Check database for matching profiles
     for data in datas:
-        
+        for i in range(1, len(data)):
+            
 
     return
 
