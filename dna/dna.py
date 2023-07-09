@@ -28,8 +28,10 @@ def main():
     for data in datas:
         match_number = 0
         for i in range(1, len(data)):
-            if data[reader.fieldnames[i]] == str[i-1]:
+            if int(data[reader.fieldnames[i]]) == str[i-1]:
                 match_number += 1
+        if match_number == len(str):
+            print(data['name])
 
     return
 
