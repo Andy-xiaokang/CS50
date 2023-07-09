@@ -22,7 +22,7 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     str = {}
     for i in range(1,len(reader.fieldnames)):
-        st
+        str[reader.fieldnames[]]
 
     # TODO: Check database for matching profiles
 
