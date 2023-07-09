@@ -26,6 +26,7 @@ def main():
 
     # TODO: Check database for matching profiles
     for data in datas:
+        match_number = 0
         for i in range(1, len(data)):
             
 
