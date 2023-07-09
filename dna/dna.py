@@ -25,7 +25,8 @@ def main():
         str.append(longest_match(dna, reader.fieldnames[i]))
 
     # TODO: Check database for matching profiles
-    for 
+    for data in datas:
+        
 
     return
 
