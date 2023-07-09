@@ -20,7 +20,8 @@ def main():
         dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
-    
+    str = {}
+    for 
 
     # TODO: Check database for matching profiles
 
