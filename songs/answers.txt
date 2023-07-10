@@ -1,1 +1,2 @@
 SELECT AVG(energy), AVG(valence), AVG(danceability) from songs;
+if energy 
