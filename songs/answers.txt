@@ -1,2 +1,3 @@
 SELECT AVG(energy), AVG(valence), AVG(danceability) from songs;
 if energy, valence, or dnaceability distributed very high or low, then the average will in the medium, this is not resonable.
+divided into two groups higher than 0.5 and less than 0.5, then calculate 
