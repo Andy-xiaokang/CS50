@@ -7,6 +7,8 @@ SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 A
 SELECT account_number FROM atm_transactions WHERE year = 2021 AND month = 7 AND day = 28 AND transaction_type = 'withdraw';
 SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60;
 SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE origin_airport_id IN (SELECT id FROM airports WHERE city ='Fiftyville'));
+-- earliest flight id in 2021.7.29 is 36  and the airports id of Fiftyville is 8
+select * from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29;
 
 SELECT name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND 15<minute<=25 AND activity = 'exit');
 SELECT name FROM people WHERE phone_number IN (SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60);
