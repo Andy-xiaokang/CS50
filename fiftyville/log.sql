@@ -5,8 +5,11 @@ SELECT description FROM crime_scene_reports WHERE year = 2021 AND month = 7 AND 
 SELECT transcript FROM interviews WHERE year = 2021 AND month = 7 AND day = 28;
 --the license_plate within 10 minutes exit the bakery
 SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND 15<minute AND minute<=25 AND activity = 'exit';
-SELECT account_number FROM atm_transactions WHERE year = 2021 AND month = 7 AND day = 28 AND transaction_type = 'withdraw';
+--the account_number withdraw in that day and in location of 'Leggett Street'
+SELECT account_number FROM atm_transactions WHERE year = 2021 AND month = 7 AND day = 28 AND transaction_type = 'withdraw' AND atm_location ='Leggett Street';
+--the caller phone number in that day and duration less than 60
 SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60;
+--
 SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE origin_airport_id IN (SELECT id FROM airports WHERE city ='Fiftyville'));
 -- earliest flight id in 2021.7.29 is 36  and the airports id of Fiftyville is 8
 SELECT id FROM airports WHERE city ='Fiftyville'  --origin id is 8
