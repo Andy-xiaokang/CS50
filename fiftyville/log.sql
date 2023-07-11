@@ -12,7 +12,7 @@ select * from flights where origin_airport_id = 8 and year = 2021 AND month = 7 
 select id from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29 AND hour = 8 AND minute = 20;
 
 SELECT name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND 15<minute AND minute<=25 AND activity = 'exit') ORDER BY name;
---Barry Bruce Diana Iman Kelsey Luca Sofia Taylor Vanessa
+--Barry Bruce Diana Iman Kelsey Luca Sofia Vanessa
 SELECT name FROM people WHERE phone_number IN (SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60) ORDER BY name;
 --Benista Bruce Carina Diana Kelsey Kenny Sofia Taylor
 SELECT name FROM people WHERE id IN (SELECT person_id FROM bank_accounts WHERE account_number IN (SELECT account_number FROM atm_transactions WHERE year = 2021 AND month = 7 AND day = 28 AND transaction_type = 'withdraw' AND atm_location ='Leggett Street')) ORDER BY name;
