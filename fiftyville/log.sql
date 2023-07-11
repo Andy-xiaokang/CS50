@@ -22,7 +22,7 @@ select name from people where passport_number in (select passport_number FROM pa
 --Bruce Doris Edward Kelsey Kenny Luca Sofia Taylor
 
 select city from airports where id = (select destination_airport_id from flights where id = 36);
---
+--city: New York City
 
 SELECT receiver FROM phone_calls WHERE (caller = (select phone_number from people where name = 'Bruce')) AND year = 2021 AND month = 7 AND day = 28 AND duration < 60;
 --receiver: (375) 555-8161
