@@ -8,6 +8,7 @@ SELECT account_number FROM atm_transactions WHERE year = 2021 AND month = 7 AND 
 SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60;
 SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flights WHERE origin_airport_id IN (SELECT id FROM airports WHERE city ='Fiftyville'));
 -- earliest flight id in 2021.7.29 is 36  and the airports id of Fiftyville is 8
+SELECT id FROM airports WHERE city ='Fiftyville'  --origin id is 8
 select * from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29;  --earliest time is 8:20 am
 select id from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29 AND hour = 8 AND minute = 20;  --flight_id is 36
 
@@ -21,7 +22,7 @@ select name from people where passport_number in (select passport_number FROM pa
 --Bruce Doris Edward Kelsey Kenny Luca Sofia Taylor
 
 select city from airports where id = (select destination_airport_id from flights where id = 36);
-
+--
 
 SELECT receiver FROM phone_calls WHERE (caller = (select phone_number from people where name = 'Bruce')) AND year = 2021 AND month = 7 AND day = 28 AND duration < 60;
 --receiver: (375) 555-8161
