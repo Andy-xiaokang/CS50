@@ -11,7 +11,7 @@ SELECT passport_number FROM passengers WHERE flight_id IN (SELECT id FROM flight
 select * from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29;
 select id from flights where origin_airport_id = 8 and year = 2021 AND month = 7 AND day = 29 AND hour = 8 AND minute = 20;
 
-SELECT name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND 15<minute<=25 AND activity = 'exit') ORDER BY name;
+SELECT name FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND 15<minute AND minute<=25 AND activity = 'exit') ORDER BY name;
 --Barry Bruce Diana Iman Kelsey Luca Sofia Taylor Vanessa
 SELECT name FROM people WHERE phone_number IN (SELECT caller FROM phone_calls WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60) ORDER BY name;
 --Benista Bruce Carina Diana Kelsey Kenny Sofia Taylor
