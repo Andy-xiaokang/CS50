@@ -10,9 +10,17 @@
             document.addEventListener('DOMContentLoaded', function() {
                 //when correct answer is clicked, change color to green
                 let correct = document.querySelecter('.correct');
-                correct.style.backgroundColor = 'green';
-                document.querySelector('#feedback1').
-            })
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                //when any incorrect answer is clicked, change color to red
+                let incorrects = document.querySelecter('.incorrect');
+                for (let i = 0; i < incorrects.length; i++){
+                    
+                }
+            });
         </script>
     </head>
     <body>
