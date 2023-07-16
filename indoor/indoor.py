@@ -1,0 +1,2 @@
+def main():
+    lowercase = input()
