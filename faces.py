@@ -1,2 +1,7 @@
 def main():
-    face = input("").replace()
+    face = input("")
+    print(convert(face))
+
+def convert(s):
+    
+main()
