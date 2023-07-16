@@ -7,7 +7,8 @@ def main():
 
 def dollars_to_float(d):
     # TODO
-    return float(d)
+    d = d.strip('')
+    return d
 
 
 def percent_to_float(p):
