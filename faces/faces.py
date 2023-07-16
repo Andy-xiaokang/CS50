@@ -3,9 +3,9 @@ def main():
     print(convert(face))
 
 def convert(s):
-    after = s.replace(':)', '🙂')
-    after = s.replace(':(', '🙁')
-    return after
+    s = s.replace(':)', '🙂')
+    s = s.replace(':(', '🙁')
+    return s
 
 
 main()
