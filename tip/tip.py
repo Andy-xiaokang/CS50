@@ -7,7 +7,8 @@ def main():
 
 def dollars_to_float(d):
     # TODO
-    d = d.strip('')
+    d = d.strip('$')
+    d = float(d, 1)
     return d
 
 
