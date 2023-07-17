@@ -13,3 +13,5 @@ def main():
         print(media_type[s])
     else:
         print("application/octet-stream")
+
+main()
