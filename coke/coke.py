@@ -1,4 +1,6 @@
 def main():
     amount = 50
-    insert = get_input()
-    
+    while amount > 0:
+        print("Amount Due:", amount)
+        input = get_input()
+        
