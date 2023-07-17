@@ -15,6 +15,7 @@ def is_valid(s):
         if not i.isalnum():
             return False
     # find index of the first digit
+    index = -1
     for i in s:
         if i.isdigit():
             index = s.find(i)
