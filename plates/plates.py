@@ -16,6 +16,8 @@ def is_valid(s):
             return False
 
     for i in s:
-        
+        if i.isdigit():
+            index = s.find(i)
+            
 
 main()
