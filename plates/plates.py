@@ -24,4 +24,6 @@ def is_valid(s):
     if not s[index:].isdigit():
         return False
 
+    return True
+
 main()
