@@ -5,6 +5,15 @@ def main():
     match y:
         case '+':
             s = x + z
-            print(f"{s}:.1f")
-            
+            print(f"{s:.1f}")
+        case '-':
+            s = x - z
+            print(f"{s:.1f}")
+        case '*':
+            s = x * z
+            print(f"{s:.1f}")
+        case '/':
+            s = x / z
+            print(f"{s:.1f}")
+
 main()
