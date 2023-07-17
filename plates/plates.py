@@ -20,8 +20,8 @@ def is_valid(s):
             index = s.find(i)
             if s[index] == '0':
                 return False
-        if not s[index:].isdigit():
-            return False
+    if not s[index:].isdigit():
+        return False
 
     return True
 
