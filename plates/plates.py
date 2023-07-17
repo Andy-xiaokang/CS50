@@ -14,13 +14,14 @@ def is_valid(s):
     for i in s:
         if not i.isalnum():
             return False
-
+    # find index of the first digit
+    index = 0
     for i in s:
         if i.isdigit():
             index = s.find(i)
             break
     if s[index] == '0':
-                return False
+        return False
     if not s[index:].isdigit():
         return False
 
