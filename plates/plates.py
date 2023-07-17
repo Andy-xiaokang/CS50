@@ -14,15 +14,14 @@ def is_valid(s):
     for i in s:
         if not i.isalnum():
             return False
-    
+
     for i in s:
         if i.isdigit():
             index = s.find(i)
-            break
-    if s[index] == '0':
-        return False
-    if not s[index:].isdigit():
-        return False
+            if s[index] == '0':
+                return False
+            if not s[index:].isdigit():
+                return False
 
     return True
 
