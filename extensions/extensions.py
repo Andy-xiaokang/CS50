@@ -10,4 +10,6 @@ def main():
     }
     s = input('File name: ').lower().split('.')[1]
     if s in media_type:
-        print('')
+        print(media_type[s])
+    else:
+        print("application/octet-stream")
