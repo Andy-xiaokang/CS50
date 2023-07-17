@@ -22,8 +22,7 @@ def main():
     "watermelon": 80,
 }
     fruit = input("Item: ").lower()
-    for i in calories:
-        if i == fruit:
-            print("Calories:",calories[i])
+    if fruit in calories:
+        print("Calories:", calories[fruit])
 
 main()
