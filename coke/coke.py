@@ -11,6 +11,8 @@ def get_input():
         insert = int(input("Insert Coin: "))
         if insert == 5 or insert == 10 or insert == 25:
             break
+        else:
+            print("Amount Due:", amount)
     return insert
 
 main()
