@@ -8,7 +8,7 @@ def main():
         'txt': 'text/plain',
         'zip': 'application/zip'
     }
-    s = input('File name: ').lower().strip().split('.')[1]
+    s = input('File name: ').lower().strip().split('.')[]
     if s in media_type:
         print(media_type[s])
     else:
