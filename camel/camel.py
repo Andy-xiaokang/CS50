@@ -5,4 +5,8 @@ def main():
         if s.islower():
             after = after + s
         elif s.isupper():
-            after = after + 
+            after = after + '_' + s.lower()
+
+    print("snake_case: " + after)
+
+main()
