@@ -25,3 +25,5 @@ def main():
     for i in calories:
         if i == fruit:
             print("Calories:",calories[i])
+
+main()
