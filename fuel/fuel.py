@@ -4,8 +4,10 @@ def main():
 
 def fuel(s):
     try:
-        x,y = int(input(s).split('/')[0]) , int(input(s).split('/')[0])
+        input_string = input(s).split('/')
+        x,y = int(input_string[0]) , int(input_string[1])
         return round((x/y)*100)
     except (ValueError, ZeroDivisionError):
         pass
 
+main()
