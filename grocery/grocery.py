@@ -11,6 +11,6 @@ def main():
             break
 
     for i in dict:
-        print()
+        print(dict[i], i)
 
 main()
