@@ -26,6 +26,7 @@ def main():
             date = date.split(',')
             if len(date) != 2:
                 continue
+            print(1)
             year = int(date[1].strip())
             date1 = date[0]
             month = date1.split(' ')[0]
