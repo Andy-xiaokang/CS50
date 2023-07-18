@@ -6,6 +6,9 @@ def main():
                 continue
             else:
                 print(f"{int(date[2]):04}-{int(date[0]):02}-{int(date[1]):02}")
+                break
+        else:
+            
 
 
 main()
