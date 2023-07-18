@@ -1,4 +1,5 @@
 def main():
     date = input("Date: ")
-    if len(date.split(/) == 3):
+    date1 = date.split(/)
+    if len(date1 == 3):
         

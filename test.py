@@ -1,1 +1,1 @@
-print(str(5.00))
+print(len([1,2,3]))
