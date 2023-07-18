@@ -10,7 +10,8 @@ def main():
         else:
             date = date[0].split(',')
             while True:
-                if len(date) 
+                if len(date) !=2:
+                    
 
 
 main()
