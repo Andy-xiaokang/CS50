@@ -1,4 +1,18 @@
 def main():
+    M = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
     while True:
         date = input("Date: ")
         if len(date.split('/'))== 3:
@@ -12,8 +26,16 @@ def main():
             date = date.split(',')
             if len(date) != 2:
                 continue
-            
-
+            year = int(date[1].strip())
+            date1 = date[0]
+            month = date1.split(' ')[0]
+            if month not in M:
+                continue
+            month = M.index(month) + 1
+            day = int(date1.split(' ')[1])
+            if month > 12 or day > 31:
+                continue
+            print(f"{year:04}-{month:02}-{day:02}")
 
 
 main()
