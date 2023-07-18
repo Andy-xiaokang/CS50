@@ -14,3 +14,9 @@ def main():
     while True:
         try:
             item = input("Item: ")
+            if item.title() in menu:
+                total = total + menu[item]
+            else:
+                continue
+        except EOFError:
+            
