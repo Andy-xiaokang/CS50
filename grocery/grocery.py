@@ -4,10 +4,13 @@ def main():
         try:
             item = input().upper()
             if item in dict:
-                dict[''] += 1
+                dict[item] += 1
             else:
-                dict['']
+                dict[item] = 1
         except EOFError:
             break
+
+    for i in dict:
+        print()
 
 main()
