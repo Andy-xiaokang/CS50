@@ -19,4 +19,6 @@ def main():
             else:
                 continue
         except EOFError:
-            
+            print("Total:",total)
+
+main()
