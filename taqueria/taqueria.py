@@ -16,10 +16,10 @@ def main():
             item = input("Item: ")
             if item.title() in menu:
                 total = total + menu[item.title()]
+                print("Total: " + '$' + str(total))
             else:
                 continue
         except EOFError:
-            print("Total: " + '$' + str(total))
             break
 
 main()
