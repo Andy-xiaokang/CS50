@@ -26,7 +26,7 @@ def main():
             date = date.split(',')
             if len(date) != 2:
                 continue
-            print(1)
+            # print(1)
             year = int(date[1].strip())
             date1 = date[0]
             month = date1.split(' ')[0]
@@ -37,6 +37,7 @@ def main():
             if month > 12 or day > 31:
                 continue
             print(f"{year:04}-{month:02}-{day:02}")
+            return 0
 
 
 main()
