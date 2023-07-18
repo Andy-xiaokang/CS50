@@ -1,1 +1,1 @@
-print("taco".title())
+print(str(5.00))
