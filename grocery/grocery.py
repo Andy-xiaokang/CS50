@@ -10,7 +10,7 @@ def main():
         except EOFError:
             break
 
-    for i in dict:
+    for i in sorted(dict.keys()):
         print(dict[i], i)
 
 main()
