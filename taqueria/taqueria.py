@@ -20,5 +20,6 @@ def main():
                 continue
         except EOFError:
             print("Total:",total)
+            break
 
 main()
