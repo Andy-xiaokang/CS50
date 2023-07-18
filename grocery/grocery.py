@@ -9,11 +9,8 @@ def main():
                 dict[item] = 1
         except EOFError:
             break
-    print(dict.keys())
-    print(dict.values())
-    print(dict.items())
+
     for i in sorted(dict.keys()):
         print(dict[i], i)
 
-    print(sorted(dict.keys()))
 main()
