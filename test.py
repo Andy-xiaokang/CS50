@@ -1,1 +1,1 @@
-print(len([1,2,3]))
+print('September 8, 1636'.split('/'))
