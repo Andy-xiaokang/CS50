@@ -10,7 +10,7 @@ def main():
         else:
             date = date[0]
             while True:
-                
+                year = date.split
 
 
 main()
