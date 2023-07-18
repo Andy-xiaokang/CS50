@@ -1,5 +1,8 @@
 def main():
     frac = fuel("Fraction: ")
+    if frac <= 1:
+        print('E')
+    elif frac 
     print(str(frac)+'%')
 
 def fuel(s):
