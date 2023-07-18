@@ -9,7 +9,8 @@ def main():
                 return 0
         else:
             date = date[0]
-            
+            while True:
+                
 
 
 main()
