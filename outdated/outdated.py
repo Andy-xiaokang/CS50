@@ -1,5 +1,6 @@
 def main():
-    date = input("Date: ")
-    date1 = date.split(/)
-    if len(date1 == 3):
-        
+    while True:
+        date = input("Date: ").split('/')
+        if len(date == 3):
+            
+
