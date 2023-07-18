@@ -1,3 +1,5 @@
+
+def main():
     menu = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
@@ -9,9 +11,6 @@
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-
-def main():
-
     total = 0
     while True:
         try:
