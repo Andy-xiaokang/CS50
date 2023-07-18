@@ -1,7 +1,8 @@
 def main():
     while True:
-        date = input("Date: ").split('/')
-        if len(date)== 3:
+        date = input("Date: ")
+        if len(date.split('/'))== 3:
+            date = date.split('/')
             if int(date[0]) > 12 or int(date[1]) > 31:
                 continue
             else:
@@ -11,7 +12,7 @@ def main():
             date = date[0].split(',')
             while True:
                 if len(date) !=2:
-                    
+
 
 
 main()
