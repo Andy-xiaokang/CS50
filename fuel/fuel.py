@@ -2,7 +2,7 @@ def main():
     frac = fuel("Fraction: ")
     if frac <= 1:
         print('E')
-    elif frac  100:
+    elif frac >= 99:
         print('F')
     else:
         print(str(frac)+'%')
