@@ -5,7 +5,7 @@ def main():
             if int(date[0]) > 12 or int(date[1]) > 31:
                 continue
             else:
-                print(f"{date[2]:04}-{date[0]:02}-{date[1]:02}")
+                print(f"{int(date[2]):04}-{int(date[0]):02}-{int(date[1]):02}")
 
 
 main()
