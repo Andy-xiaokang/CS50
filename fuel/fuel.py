@@ -1,10 +1,10 @@
-# def main():
-#     fuel("Fraction: ")
+def main():
+    fuel("Fraction: ")
 
 
-# def fuel(s):
-#     try:
-#         input_string = int(input(s).split('/'))
+def fuel(s):
+    try:
+        input_string = int(input(s).split('/'))
 
 # s = ['1','2']
 # s = int(s)
