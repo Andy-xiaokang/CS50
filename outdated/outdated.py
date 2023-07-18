@@ -17,6 +17,8 @@ def main():
         date = input("Date: ")
         if len(date.split('/'))== 3:
             date = date.split('/')
+            if date[0].isalpha():
+                continue
             if int(date[0]) > 12 or int(date[1]) > 31:
                 continue
             else:
