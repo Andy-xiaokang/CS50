@@ -10,6 +10,9 @@ def main():
                 return 0
         else:
             date = date.split(',')
+            if len(date) != 2:
+                continue
+            
 
 
 
