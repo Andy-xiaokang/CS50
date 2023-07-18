@@ -19,7 +19,7 @@ def main():
             else:
                 continue
         except EOFError:
-            print("Total:",total)
+            print("Total: " + '$' + str(total))
             break
 
 main()
