@@ -6,7 +6,7 @@ def main():
     level = get_level()
     for i in range(10):
         error = 0
-        x,y = generate_integer(level), generate_integer()
+        x,y = generate_integer(level), generate_integer(level)
 
         while True:
             print(f"{x} + {y} = ", end = '')
