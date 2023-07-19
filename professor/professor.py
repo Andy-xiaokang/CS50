@@ -12,9 +12,9 @@ def get_level():
             if level != 1 and level != 2 and level != 3:
                 continue
             else:
-                break
+                return level
         except ValueError:
-            
+            pass
 
 
 
