@@ -7,6 +7,8 @@ def main:
 
 
 def get_coins():
+    if len(sys.argv) == 1:
+        sys.exit("Missing command-line argument")
     try:
         number = float(sys.argv[1])
         return number
