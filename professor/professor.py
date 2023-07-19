@@ -18,13 +18,13 @@ def main():
                 else:
                     error += 1
                     print("EEE")
-                    if error = 3:
+                    if error == 3:
                         print(f"{x} + {y} = {x + y}")
                         break
             except ValueError:
                 error += 1
                 print("EEE")
-                if error = 3:
+                if error == 3:
                     print(f"{x} + {y} = {x + y}")
                     break
 
@@ -34,7 +34,7 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level = 1 or level = 2 or level != 3:
+            if level == 1 or level == 2 or level == 3:
                 return level
             else:
                 continue
