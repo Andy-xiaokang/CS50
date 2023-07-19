@@ -7,20 +7,20 @@ def main():
     for i in range(10):
         error = 0
         x,y = generate_integer(level), generate_integer()
-        print(f"{x} + {y} = ", end = '')
-        answer = input()
+
         while True:
+            print(f"{x} + {y} = ", end = '')
+            answer = input()
             try:
                 if x + y == int(answer):
                     score += 1
                     break
                 else:
                     error += 1
-
                     print("EEE")
-                    print(f"{x} + {y} = ", end = '')
-                    answer = input()
-                    
+                    if error = 3:
+                        print(f"{x} + {y} = {x + y}")
+                        break
             except ValueError:
 
 
