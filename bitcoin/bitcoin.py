@@ -6,7 +6,8 @@ def main():
     number = get_coins()
     try:
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-        rate_float = response.json()
+        rate_float = response.json()['bpi']['USD']['rate_float']
+        print(f"${number*rate_float:,.4f}")
         # print(json.dumps(response.json(), indent = 2))
     except requests.RequestException:
         sys.exit("Request failed")
