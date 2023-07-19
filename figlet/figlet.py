@@ -12,7 +12,7 @@ if len(sys.argv) == 1:
     print("Output: ")
     print(figlet.renderText(s))
 elif len(sys.argv) == 3:
-    if sys.argv[1] != '-f' or sys.argv[1] != '--font' or sys.argv[2] not in fonts:
+    if sys.argv[1] != '-f' or sys.argv[1] != '--font' or (sys.argv[2] not in fonts):
         sys.exit("Argument error")
     s = input("Input: ")
     f = sys.argv[2]
