@@ -6,4 +6,7 @@ while True:
         else:
             continue
     except ValueError:
-        
+        pass
+
+while True:
+    
