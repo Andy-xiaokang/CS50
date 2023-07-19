@@ -28,6 +28,7 @@ def main():
                     print(f"{x} + {y} = {x + y}")
                     break
 
+    print(f"Score: {score}")
 
 
 def get_level():
