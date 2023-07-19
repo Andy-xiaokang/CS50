@@ -4,7 +4,8 @@ import json
 
 def main():
     number = get_coins()
-    response = request.get()
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    print(response)
 
 
 def get_coins():
