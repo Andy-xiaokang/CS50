@@ -12,4 +12,4 @@ while True:
         break
 
 mylist = p.join(names)
-print("Adieu, adieu, to " + mylist)
+print("\nAdieu, adieu, to " + mylist)
