@@ -1,9 +1,9 @@
 import sys
 import requests
 
-def main:
+def main():
     number = get_coins()
-
+    
 
 
 def get_coins():
