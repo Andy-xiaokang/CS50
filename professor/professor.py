@@ -2,7 +2,10 @@ import random
 
 
 def main():
-    
+    level = get_level()
+    for i in range(10):
+        x,y = generate_integer(level), generate_integer()
+        
 
 
 def get_level():
