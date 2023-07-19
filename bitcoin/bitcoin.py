@@ -4,7 +4,7 @@ import json
 
 def main():
     number = get_coins()
-    response = 
+    response = request.get()
 
 
 def get_coins():
