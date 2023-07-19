@@ -5,17 +5,23 @@ def main():
     score = 0
     level = get_level()
     for i in range(10):
+        error = 0
         x,y = generate_integer(level), generate_integer()
         print(f"{x} + {y} = ", end = '')
         answer = input()
-        try:
-            if x + y == int(answer):
-                score += 1
-                continue
-            else:
-                print("EEE")
-                print(f"{x} + {y} = ", end = '')
-                answer = input()
+        while True:
+            try:
+                if x + y == int(answer):
+                    score += 1
+                    break
+                else:
+                    error += 1
+                    if error > 3
+                    print("EEE")
+                    print(f"{x} + {y} = ", end = '')
+                    answer = input()
+            except ValueError:
+
 
 
 
