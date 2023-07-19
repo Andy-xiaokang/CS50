@@ -8,7 +8,7 @@ def main():
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
         print(response)
     except requests.RequestException:
-        
+        sys.exit("Request failed")
 
 def get_coins():
     if len(sys.argv) == 1:
