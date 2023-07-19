@@ -9,10 +9,10 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level != 1 and level != 2 and level != 3:
-                continue
-            else:
+            if level = 1 or level = 2 or level != 3:
                 return level
+            else:
+                continue
         except ValueError:
             pass
 
