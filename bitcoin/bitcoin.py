@@ -16,3 +16,6 @@ def get_coins():
         return number
     except ValueError:
         sys.exit("Command-line argument is not a number")
+
+if __name__ == "__main__":
+    main()
