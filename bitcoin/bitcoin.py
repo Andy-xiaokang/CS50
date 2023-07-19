@@ -6,7 +6,7 @@ def main():
     number = get_coins()
     try:
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-        print(response)
+        print(response.json())
     except requests.RequestException:
         sys.exit("Request failed")
 
