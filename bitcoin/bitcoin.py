@@ -7,4 +7,8 @@ def main:
 
 
 def get_coins():
-    
+    try:
+        number = float(sys.argv[1])
+        return number
+    except ValueError:
+        sys.exit("Command-line argument is not a number")
