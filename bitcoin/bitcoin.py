@@ -4,9 +4,11 @@ import json
 
 def main():
     number = get_coins()
-    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    print(response)
-
+    try:
+        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+        print(response)
+    except requests.RequestException:
+        
 
 def get_coins():
     if len(sys.argv) == 1:
