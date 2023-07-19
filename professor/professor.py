@@ -16,10 +16,11 @@ def main():
                     break
                 else:
                     error += 1
-                    if error > 3:
+
                     print("EEE")
                     print(f"{x} + {y} = ", end = '')
                     answer = input()
+                    
             except ValueError:
 
 
