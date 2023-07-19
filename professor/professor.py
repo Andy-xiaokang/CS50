@@ -22,7 +22,11 @@ def main():
                         print(f"{x} + {y} = {x + y}")
                         break
             except ValueError:
-
+                error += 1
+                print("EEE")
+                if error = 3:
+                    print(f"{x} + {y} = {x + y}")
+                    break
 
 
 
