@@ -1,7 +1,8 @@
-import emoji
+from emoji import emojize
+
 def main():
     str = input("Input: ")
-    print("Output: " + emoji.emojize(str, language='alias'))
+    print("Output: " + emojize(str, language='alias'))
 
-if __name__ == "__main__":
-    main()
+
+main()
