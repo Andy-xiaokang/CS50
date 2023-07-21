@@ -14,6 +14,9 @@ else:
                 writer = csv.DictWriter(file, fieldnames = fieldnames)
                 writer.writerheader()
                 for student in reader:
-                    
+                    first = student["name"].split(",")[1].strip()
+                    last = student["name"].split(",")[0].strip()
+                    house = student["house"]
+                    writer.writerow({"first":first, "last":last, "house":house})
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
