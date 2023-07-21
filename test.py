@@ -1,1 +1,2 @@
-print(int("1.5"))
+tuple =(1,2,3)
+print(tuple[1])
