@@ -16,3 +16,8 @@ if input_extension not in [".jpg",".jpeg",".png"] or output_extension not in [".
 if input_extension != output_extension:
     sys.exit("Input and output have different extensions")
 
+try:
+    before = Image.open(sys.argv[1])
+
+except FileNotFoundError:
+    sys.exit("")
