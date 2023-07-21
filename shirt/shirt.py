@@ -10,4 +10,3 @@ else:
         sys.exit("Invalid Input")
     elif sys.argv[1].split(".")[1] != sys.argv[2].split["."][1]:
         sys.exit("Input and output have different extensions")
-    
