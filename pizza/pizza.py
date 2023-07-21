@@ -13,6 +13,6 @@ else:
     try:
         with open(sys.argv[1], "r") as file:
             reader = csv.reader(file)
-            tabulate(reader, headers = "firstrow", )
+            print(tabulate(reader, headers = "firstrow", tablefmt= "grid"))
     except FileNotFoundError:
         sys.exit("File does not exist")
