@@ -9,6 +9,6 @@ else:
     try:
         with open(sys.argv[1], "r") as csvfile:
             reader = csv.DictReader(csvfile)
-
+            
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
