@@ -22,7 +22,7 @@ try:
     before = Image.open(sys.argv[1])
     fit = ImageOps.fit(image = before, size = size)
     fit.paste(shirt)
-    Image.save
+    Image.save()
 
 except FileNotFoundError:
     sys.exit(f"Could not read {sys.argv[1]}")
