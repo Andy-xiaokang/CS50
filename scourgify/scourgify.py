@@ -12,6 +12,7 @@ else:
             with open(sys.argv[2], "w") as file:
                 fieldnames = ["first","last","house"]
                 writer = csv.DictWriter(file, fieldnames = fieldnames)
+                writer.writerheader()
                 
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
