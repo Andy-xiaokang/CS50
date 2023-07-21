@@ -8,7 +8,7 @@ elif len(sys.argv) > 2:
     sys.exit("Too many command line arguments")
 else:
     filename = sys.argv[1]
-    if not filename.endwith(".py"):
+    if not filename.endswith(".py"):
         sys.exit("Not a python file")
     try:
         with open(filename, "r") as file:
@@ -19,6 +19,6 @@ else:
 
 complexity = len(lines)
 for i in lines:
-    if i.lstrip().startwith("#"):
+    if i.lstrip().startswith("#"):
         complexity -= 1
 print(complexity)
