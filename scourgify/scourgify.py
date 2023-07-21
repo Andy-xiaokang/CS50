@@ -9,6 +9,8 @@ else:
     try:
         with open(sys.argv[1], "r") as csvfile:
             reader = csv.DictReader(csvfile)
-            
+            with open(sys.argv[2], "w") as file:
+                fieldnames = ["","",""]
+
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
