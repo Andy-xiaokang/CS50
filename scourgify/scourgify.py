@@ -12,7 +12,7 @@ else:
             with open(sys.argv[2], "w") as file:
                 fieldnames = ["first","last","house"]
                 writer = csv.DictWriter(file, fieldnames = fieldnames)
-                writer.writerheader()
+                writer.writeheader()
                 for student in reader:
                     first = student["name"].split(",")[1].strip()
                     last = student["name"].split(",")[0].strip()
