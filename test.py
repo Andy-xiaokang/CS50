@@ -1,1 +1,1 @@
-print('September 8, 1636'.split('/'))
+print(int("1.5"))
