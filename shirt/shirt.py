@@ -1,6 +1,7 @@
 import sys
 import os
-from PIL import image
+import PIL
+from PIL import Image
 
 if len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")
@@ -20,7 +21,7 @@ shirt = Image.open("shirt.png")
 size = shirt.size
 try:
     before = Image.open(sys.argv[1])
-    fit = ImageOps.fit(image = before, size = size)
+    fit = PIL.ImageOps.fit(image = before, size = size)
     fit.paste(shirt)
     fit.save(sys.argv[2])
 
