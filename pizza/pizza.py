@@ -12,4 +12,7 @@ else:
         sys.exit("Not a csv file")
     try:
         with open(sys.argv[1], "r") as file:
-            reader = 
+            reader = csv.reader(file)
+
+    except FileNotFoundError:
+        sys.exit("")
