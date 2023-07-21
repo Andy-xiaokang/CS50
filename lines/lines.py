@@ -12,7 +12,6 @@ else:
         sys.exit("Not a python file")
     try:
         with open(filename, "r") as file:
-            print(file)
             for line in file:
                 lines.append(line)
     except FileNotFoundError:
