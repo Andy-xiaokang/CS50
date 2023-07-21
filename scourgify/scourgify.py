@@ -13,6 +13,7 @@ else:
                 fieldnames = ["first","last","house"]
                 writer = csv.DictWriter(file, fieldnames = fieldnames)
                 writer.writerheader()
-                
+                for student in reader:
+                    
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
