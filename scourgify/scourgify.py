@@ -10,7 +10,8 @@ else:
         with open(sys.argv[1], "r") as csvfile:
             reader = csv.DictReader(csvfile)
             with open(sys.argv[2], "w") as file:
-                fieldnames = ["","",""]
-
+                fieldnames = ["first","last","house"]
+                writer = csv.DictWriter(file, fieldnames = fieldnames)
+                
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
