@@ -12,6 +12,7 @@ else:
         sys.exit("Not a python file")
     try:
         with open(filename, "r") as file:
+            print(file)
             for line in file:
                 lines.append(line)
     except FileNotFoundError:
@@ -21,4 +22,8 @@ complexity = len(lines)
 for i in lines:
     if i.lstrip().startswith("#"):
         complexity -= 1
+    if i.strip() == "":
+        complexity -= 1
+
+
 print(complexity)
