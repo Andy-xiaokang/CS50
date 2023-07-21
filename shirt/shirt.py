@@ -22,7 +22,7 @@ size = shirt.size
 try:
     before = Image.open(sys.argv[1])
     fit = PIL.ImageOps.fit(image = before, size = size)
-    fit.paste(shirt)
+    fit.paste(shirt, shirt)
     fit.save(sys.argv[2])
 
 except FileNotFoundError:
