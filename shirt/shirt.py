@@ -20,8 +20,9 @@ shirt = Image.open("shirt.png")
 size = shirt.size
 try:
     before = Image.open(sys.argv[1])
-    ImageOps.fit(image = before, size = size)
-    
+    fit = ImageOps.fit(image = before, size = size)
+    fit.paste()
+
 
 except FileNotFoundError:
     sys.exit(f"Could not read {sys.argv[1]}")
