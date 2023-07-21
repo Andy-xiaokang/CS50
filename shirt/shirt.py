@@ -6,5 +6,8 @@ if len(sys.argv) < 3:
 elif len(sys.argv) > 3:
     sys.exit("Too many command-line arguments")
 else:
-    if (not argv[1].endswith(".jpg") and not argv[1].endswith(".jpeg") and not argv[1].endswith(".png")) or (not argv[2].endswith(".jpg") and not argv[2].endswith(".jpeg") and not argv[2].endswith(".png")):
-        
+    if not sys.argv[1].endswith((".jpg", ".jpeg", ".png")) or not sys.argv[2].endswith((".jpg", ".jpeg", ".png")):
+        sys.exit("Invalid Input")
+    elif sys.argv[1].split(".")[1] != sys.argv[2].split["."][1]:
+        sys.exit("Input and output have different extensions")
+    
