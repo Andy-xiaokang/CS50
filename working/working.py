@@ -38,6 +38,8 @@ def convert(s):
             raise ValueError
         if amh == 12:
             amh = 0
+        if pmh == 12:
+            pmh = 0
         pmh = pmh + 12
         return f"{pmh:02}:{pmm:02} to {amh:02}:{amm:02}"
 
