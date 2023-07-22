@@ -7,7 +7,9 @@ def main():
 
 
 def parse(s):
-    matchs = re.search(r"", s)
+    matchs = re.search(r"youtube\.com/embed/(.+)", s)
+    if matchs:
+        return matchs.group(1)
 
 
 ...
