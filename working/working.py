@@ -16,7 +16,11 @@ def convert(s):
         if pmm == None:
             pmm = '0'
         amh, amm, pmh, pmm = int(amh), int(amm), int(pmh), int(pmm)
-        if not 1 <= amh <= 12 or not 1 <= pmh <= 12
+        if not 1 <= amh <= 12 or not 1 <= pmh <= 12:
+            raise ValueError
+        if not 0 <= amm <= 59 or not 0 <= pmm <= 59:
+            raise ValueError
+        
 
     else:
         raise ValueError
