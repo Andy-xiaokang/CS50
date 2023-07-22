@@ -9,10 +9,10 @@ def main():
 def parse(s):
     matchs = re.search(r"youtube\.com/embed/(.+)", s)
     if matchs:
-        return matchs.group(1)
+        return "https://youtu.be/" + matchs.group(1)
+    else:
+        return "None"
 
-
-...
 
 
 if __name__ == "__main__":
