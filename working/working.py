@@ -10,7 +10,8 @@ def main():
 def convert(s):
     matchs = re.search(r"(\d?\d):?(\d\d)? AM to (\d?\d):?(\d\d)? PM", s)
     if matchs:
-        amh, amm, pmh, pmm = matchs.group(1), matchs.group(2), matchs.group(3),
+        amh, amm, pmh, pmm = matchs.group(1), matchs.group(2), matchs.group(3), matchs.group(4)
+        
     else:
         raise ValueError
 
