@@ -1,4 +1,4 @@
-from numb3rs.py import validate
+from numb3rs import validate
 
 def test_bound():
     assert validate("0.0.0.0") == True
