@@ -9,6 +9,7 @@ def test_normal():
     assert validate("1.2.3.4") == True
 
 def test_stepbound():
+    assert validate("256.")
     assert validate("512.512.512.512") == False
     assert validate("1.2.3.1000") == False
 def test_firstbyte():
