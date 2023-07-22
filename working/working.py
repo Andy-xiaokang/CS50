@@ -8,7 +8,7 @@ def main():
 
 
 def convert(s):
-    matchs = re.search(r"(\d?\d):?(\d\d)? AM to ():?()? PM", s)
+    matchs = re.search(r"(\d?\d):?(\d\d)? AM to (\d?\d):?()? PM", s)
 
 
 
