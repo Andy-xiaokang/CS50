@@ -20,7 +20,7 @@ def convert(s):
             raise ValueError
         if not 0 <= amm <= 59 or not 0 <= pmm <= 59:
             raise ValueError
-        
+
         pmh = pmh + 12
         return f"{amh:02}:{amm:02} to {pmh:02}:{pmm:02}"
 
@@ -36,6 +36,8 @@ def convert(s):
             raise ValueError
         if not 0 <= amm <= 59 or not 0 <= pmm <= 59:
             raise ValueError
+        if amh == 12:
+            amh = 0
         pmh = pmh + 12
         return f"{pmh:02}:{pmm:02} to {amh:02}:{amm:02}"
 
