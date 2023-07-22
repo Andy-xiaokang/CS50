@@ -1,3 +1,6 @@
 import validators
-
-print(validators.email(input("What's your email address? ")))
+flag = validators.email(input("What's your email address? "))
+if flag:
+        print("Valid")
+else:
+        print("Invalid")
