@@ -8,9 +8,12 @@ def main():
 
 
 def convert(s):
-    matchs = re.search(r"(\d?\d):?(\d\d)? AM to (\d?\d):?(\d\d)? PM", s)
+    matchs = re.search(r"(\d?\d):?(\d\d)? (AM|PM) to (\d?\d):?(\d\d)? (PM|AM)", s)
     if matchs:
-        amh, amm, pmh, pmm = matchs.group(1), matchs.group(2), matchs.group(3), matchs.group(4)
+        if matchs.group(3) == 'AM' and matchs.group(6) == 'PM':
+            amh, amm, pmh, pmm = matchs.group(1), matchs.group(2), matchs.group(4), matchs.group(5)
+        elif matchs.group(3) == "PM" amd matchs.group(6) == "AM":
+            pmh, pmm, amh, amm = matchs.group(1), matchs.group(2), matchs.group(3), matchs.group(4)
         if amm == None:
             amm = '0'
         if pmm == None:
